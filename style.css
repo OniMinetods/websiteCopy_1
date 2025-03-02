@@ -14,6 +14,10 @@
   font-size: 62.5%;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 body {
   font-family: FormaDJRCyrillicDeck;
   background-color: #eef5ff;
@@ -68,7 +72,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
   margin: 0 auto;
   padding: 0 254px;
 }
@@ -84,6 +88,13 @@ h4 {
   background: white;
   padding: 5px 30px;
   border: 1px;
+}
+
+.details {
+  border-radius: 100px;
+  background: var(--base-blue);
+  padding: 30px;
+  color: white;
 }
 
 .main-container {
