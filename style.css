@@ -107,7 +107,7 @@ h4 {
 
 .main-container {
   margin: 0 auto;
-  padding: 0 254px;
+  padding: 0 200px;
 }
 
 .preview {
@@ -117,14 +117,14 @@ h4 {
 }
 
 .description-photo {
-  display: flex;
-  justify-content: center;
-  align-content: stretch;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+  min-width: 35vh;
+  gap: 20px;
   background: white;
   border-radius: 60px;
-  border: 1px;
   padding: 30px;
+  margin-bottom: 214px;
 }
 
 .dp1,
