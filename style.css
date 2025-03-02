@@ -396,16 +396,19 @@ h4 {
 }
 
 .discounts-photos {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-content: center;
+  gap: 30px;
 }
 
 .discount-png {
-  position: relative;
   width: 350px;
   height: 350px;
   object-fit: cover;
   border-radius: 35px;
+  filter: brightness(70%);
 }
 
 .discounts-photos-card1,
@@ -414,6 +417,24 @@ h4 {
   padding: 30px;
   border-radius: 60px;
   background: var(--light-blue);
+  color: white;
+}
+
+.discounts-photos-text-1 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  top: 10%;
+  padding: 20px;
+}
+
+.discounts-photos-text-2 {
+  position: absolute;
+  bottom: 4%;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 @font-face {
