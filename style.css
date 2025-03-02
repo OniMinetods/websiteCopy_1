@@ -376,6 +376,46 @@ h4 {
   left: 50%;
 }
 
+.discounts {
+  position: relative;
+  overflow: visible;
+}
+
+.bg-image2 {
+  position: absolute;
+  top: -0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.discounts-text {
+  display: flex;
+  gap: 40px;
+  color: var(--base-blue);
+}
+
+.discounts-photos {
+  display: flex;
+  justify-content: center;
+}
+
+.discount-png {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+.discounts-photos-card1,
+.discounts-photos-card2,
+.discounts-photos-card3 {
+  padding: 30px;
+  border-radius: 60px;
+  background: var(--light-blue);
+}
+
 @font-face {
   font-family: PantonRustScript;
   src: url(fonts/Panton-Rust-Script.ttf);
