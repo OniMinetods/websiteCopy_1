@@ -25,11 +25,13 @@ body {
 .text-16 {
   font-size: 16px;
   font-weight: 120%;
+  margin: 8px 0;
 }
 
 .text-20 {
   font-size: 20px;
   font-weight: 120%;
+  margin: 8px 0;
 }
 
 h1 {
@@ -46,6 +48,7 @@ h2 {
 h3 {
   font-size: 45px;
   font-weight: 120%;
+  margin: 8px 0;
 }
 
 h4 {
@@ -267,6 +270,110 @@ h4 {
 .rewards-photo-1-text {
   margin-left: 114px;
   color: var(--base-blue);
+}
+
+.programs-text {
+  color: var(--base-blue);
+  display: flex;
+  gap: 30px;
+  margin-bottom: 140px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 240px;
+}
+
+.easy-start,
+.flow-rider {
+  color: var(--base-blue);
+  display: flex;
+  align-content: center;
+}
+
+.easy-start-border {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 60px;
+  padding: 60px 40px;
+  margin: 0 15px;
+}
+
+.easy-start-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.easy-start-info {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.course,
+.lesson {
+  display: flex;
+  gap: 20px;
+}
+
+.easy-start-description-mark-1,
+.easy-start-description-mark-2,
+.easy-start-description-mark-3,
+.easy-start-description-mark-4 {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.flow-rider-description-mark-1,
+.flow-rider-description-mark-2,
+.flow-rider-description-mark-3,
+.flow-rider-description-mark-4 {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.easy-start-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.price-1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin: 8px 0;
+}
+
+.price-2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.choose {
+  background: var(--linear-red);
+  padding: 30px 200px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 100px;
+  color: white;
+}
+
+.svg-tarif {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -80%);
+  left: 50%;
 }
 
 @font-face {
