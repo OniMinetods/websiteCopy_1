@@ -113,7 +113,38 @@ h4 {
 
 .preview {
   text-align: left;
+  margin-bottom: 130px;
   color: var(--base-blue);
+}
+
+.description-photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  background: white;
+  border-radius: 60px;
+  border: 1px;
+  padding: 30px;
+}
+
+.dp1,
+.dp2,
+.dp3,
+.dp4 {
+  border-radius: 35px;
+  padding: 20px;
+}
+
+.dp1,
+.dp3 {
+  background: var(--base-blue);
+  color: var(--white);
+}
+
+.dp2,
+.dp4 {
+  background: rgb(211, 211, 211);
 }
 
 @font-face {
