@@ -1,4 +1,4 @@
-::root {
+:root {
   --linear-red: linear-gradient(#ff372a, #ff1514);
   --red: #ff3a35;
   --white: #ffffff;
@@ -10,16 +10,90 @@
   --base-text: #385462;
   --base-text-70: var(--base-text) 70%;
   --base-text-50: var(--base-text) 50%;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: FormaDJRCyrillicDeck;
+  background-color: #eef5ff;
+}
+
+.text-16 {
+  font-size: 16px;
+  font-weight: 120%;
+}
+
+.text-20 {
+  font-size: 20px;
+  font-weight: 120%;
+}
+
+h1 {
+  font-size: 116px;
+  font-weight: 110%;
+  margin: 50px 0;
+}
+
+h2 {
+  font-size: 90px;
+  font-weight: 110%;
+}
+
+h3 {
+  font-size: 45px;
+  font-weight: 120%;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 110%;
+}
+
+.panton-h2 {
+  font-family: PantonRustScript;
+  font-size: 90px;
+  font-weight: 110;
+  color: var(--red);
+}
+
+.panton-h4 {
+  font-family: PantonRustScript;
+  font-size: 26px;
+  font-weight: 120%;
+  color: var(--red);
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 0 254px;
+}
+
+.header-menu {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: white;
+  padding: 5px 30px;
+  border: 1px;
 }
 
 .main-container {
-  text-align: center;
   margin: 0 auto;
+  padding: 0 254px;
+}
 
-  font-family: FormaDJRCyrillicDeck;
-  font-style: bold;
-  font-weight: 110%;
-  font-size: 40px;
+.preview {
+  text-align: left;
+  color: var(--base-blue);
 }
 
 @font-face {
