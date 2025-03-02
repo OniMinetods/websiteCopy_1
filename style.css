@@ -84,6 +84,7 @@ h4 {
   gap: 50px;
   margin-bottom: 130px;
   padding: 0 254px;
+  text-align: center;
 }
 
 .header-menu {
@@ -171,6 +172,7 @@ h4 {
 
 .company {
   display: flex;
+  justify-content: center;
   align-content: stretch;
   color: white;
   gap: 10px;
@@ -179,9 +181,12 @@ h4 {
 
 .company-about {
   border-radius: 35px;
-  padding: 0 20px;
-  margin-bottom: 20px;
+  padding: 40px;
   background: var(--base-blue);
+}
+
+.company-about h3 {
+  margin: 20px;
 }
 
 .company-count {
