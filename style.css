@@ -157,19 +157,19 @@ button {
   margin-bottom: 214px;
 }
 
-.description-photo .photo-item:nth-child(2n + 1) {
+.description-photo .description-photo-item:nth-child(2n + 1) {
   background: var(--base-blue);
   color: var(--white);
 }
 
-.photo-item {
+.description-photo-item {
   border-radius: 35px;
   padding: 20px;
   background: rgb(211, 211, 211);
   color: var(--base-blue);
 }
 
-.surfing {
+.company-text {
   color: var(--base-blue);
   max-width: 900px;
   line-height: 10px;
@@ -178,6 +178,7 @@ button {
 .company {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-content: stretch;
   color: white;
   gap: 10px;
@@ -188,23 +189,31 @@ button {
   position: relative;
 }
 
-.company-surf-overlay {
+.company-surfer-overlay {
   position: absolute;
   top: 37%;
   left: 31%;
 }
 
-.company-about {
+.company-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: stretch;
+}
+
+.company-block-about {
   border-radius: 35px;
   padding: 40px;
   background: var(--base-blue);
 }
 
-.company-about h3 {
+.company-block-about h3 {
   margin: 20px;
 }
 
-.company-count {
+.company-block-members {
   display: flex;
   justify-content: center;
   border-radius: 35px;
@@ -214,30 +223,22 @@ button {
   box-shadow: 0 0 2px black;
 }
 
-.svg-avatar {
+.company-block-members-svg {
   margin-left: -20px;
 }
 
-.students {
+.company-block-members-text {
   justify-content: center;
   align-items: center;
   margin-left: 20px;
 }
 
-.students h3,
-.students p {
+.company-block-members-text h3,
+.company-block-members-text p {
   margin: 0;
 }
 
-.company-both {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: stretch;
-}
-
-.comment {
+.comment-text {
   font-weight: 500;
   font-size: 45px;
   color: var(--base-blue);
@@ -257,7 +258,7 @@ button {
   gap: 40px;
 }
 
-.rewards-photo-1 {
+.rewards-photo {
   display: flex;
   align-items: center;
   background-color: var(--light-blue);
@@ -265,13 +266,13 @@ button {
   background: white;
 }
 
-.rewards-photo-1-background {
+.rewards-photo-background {
   padding: 30px;
   background: var(--light-blue);
   border-radius: 60px;
 }
 
-.rewards-photo-1-text {
+.rewards-photo-text {
   margin-left: 114px;
   color: var(--base-blue);
 }
@@ -297,7 +298,8 @@ button {
   align-content: center;
 }
 
-.easy-start-border {
+.easy-start-border,
+.flow-rider-border {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -309,42 +311,36 @@ button {
   margin: 0 15px;
 }
 
-.easy-start-text {
+.easy-start-text,
+.flow-rider-text {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.easy-start-info {
+.easy-start-info,
+.flow-rider-info {
   display: flex;
   gap: 50px;
   margin-bottom: 30px;
 }
 
-.course,
-.lesson {
+.easy-start-info-course,
+.easy-start-info-lesson,
+.flow-rider-info-course,
+.flow-rider-info-lesson {
   display: flex;
   gap: 20px;
 }
 
-.easy-start-description-mark-1,
-.easy-start-description-mark-2,
-.easy-start-description-mark-3,
-.easy-start-description-mark-4 {
+.easy-start-description-mark,
+.flow-rider-description-mark {
   display: flex;
   gap: 30px;
   margin-bottom: 30px;
 }
 
-.flow-rider-description-mark-1,
-.flow-rider-description-mark-2,
-.flow-rider-description-mark-3,
-.flow-rider-description-mark-4 {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 10px;
-}
-
-.easy-start-price {
+.easy-start-price,
+.flow-rider-price {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -352,20 +348,23 @@ button {
   margin-bottom: 30px;
 }
 
-.price-1 {
+.easy-start-price-old,
+.flow-rider-price-old {
   font-size: 30px;
   font-weight: 400;
   text-decoration: line-through;
   margin: 8px 0;
 }
 
-.price-2 {
+.easy-start-price-new,
+.flow-rider-price-new {
   font-size: 50px;
   font-weight: 700;
   margin: 8px 0;
 }
 
-.choose {
+.easy-start-button,
+.flow-rider-button {
   background: var(--linear-red);
   padding: 30px 200px;
   font-size: 24px;
@@ -374,7 +373,8 @@ button {
   color: white;
 }
 
-.svg-tarif {
+.easy-start-border-svg,
+.flow-rider-border-svg {
   position: absolute;
   top: 0;
   transform: translate(-50%, -80%);
@@ -385,9 +385,12 @@ button {
   position: relative;
   overflow: visible;
   margin-bottom: 330px;
+  color: white;
 }
 
-.bg-image2 {
+.discounts-background-image,
+.order-background-image,
+.rewards-background-image {
   position: absolute;
   top: -0;
   left: 50%;
@@ -402,14 +405,7 @@ button {
   color: var(--base-blue);
 }
 
-.discounts-photos {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 30px;
-}
-
-.discount-png {
+.discounts-photos-card-png {
   width: 350px;
   height: 350px;
   object-fit: cover;
@@ -417,34 +413,37 @@ button {
   filter: brightness(70%);
 }
 
-.discounts-photos-card1,
-.discounts-photos-card2,
-.discounts-photos-card3 {
+.discounts-photos-card {
   position: relative;
+}
+
+.discounts-photos-card-text-up {
+  position: absolute;
+  top: 0;
   padding: 30px;
-  border-radius: 60px;
-  background: var(--light-blue);
-  color: white;
 }
 
-.discounts-photos-text-1 {
+.discounts-photos-card-text-down {
   position: absolute;
+  bottom: 0;
+  padding: 30px;
+}
+
+.discounts-photos-card-text-svg {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 30px;
+}
+
+.discounts-photos {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
-  top: 7%;
-  padding: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.discounts-photos-text-2 {
-  position: absolute;
-  bottom: 4%;
-  padding: 25px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.comment-2 {
+.comment {
   position: relative;
   display: flex;
   justify-content: center;
@@ -452,12 +451,6 @@ button {
   font-weight: 500;
   color: var(--base-blue);
   margin-bottom: 240px;
-}
-
-.wave-svg {
-  position: absolute;
-  left: 6.5%;
-  top: 48%;
 }
 
 .order {
@@ -503,7 +496,7 @@ button {
   grid-column: 1 / span 2;
 }
 
-.order-form-button {
+.order-block-button {
   background: var(--linear-red);
   color: white;
   font-size: 24px;
