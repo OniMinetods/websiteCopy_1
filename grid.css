@@ -1,0 +1,65 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: black;
+}
+.elem-1 {
+  grid-area: 1 / span 2;
+  background: red;
+}
+.elem-2 {
+  background: white;
+}
+.elem-3 {
+  background: white;
+}
+.elem-4 {
+  background: white;
+}
+.elem-5 {
+  grid-area: 2 / span 2;
+  background: white;
+}
+.elem-6 {
+  grid-area: 2 / span 2;
+  background: white;
+}
+.elem-7 {
+  grid-area: span 2 / 5;
+  background: white;
+}
+.elem-8 {
+  grid-area: 3 / span 2;
+  background: white;
+}
+.elem-9 {
+  grid-area: 3 / span 2 / span 2;
+  background: blue;
+}
+.elem-10 {
+  grid-area: 4 / span 2;
+  background: rgb(0, 0, 0);
+}
+.elem-11 {
+  grid-area: span 2 / 5;
+  background: yellow;
+}
+.elem-12 {
+  grid-area: span 2 / 1;
+  background: yellow;
+}
+.elem-13 {
+  grid-area: span 2 / 2;
+  background: white;
+}
+.elem-14 {
+  grid-area: span 2 / span 2;
+  background: red;
+}
+.elem-15 {
+  background: white;
+}

@@ -458,6 +458,17 @@ h4 {
   top: 48%;
 }
 
+.order {
+  position: relative;
+}
+
+.order-text {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--base-blue);
+}
+
 @font-face {
   font-family: PantonRustScript;
   src: url(fonts/Panton-Rust-Script.ttf);
