@@ -17,6 +17,7 @@ a:link {
 }
 
 body {
+  overflow-x: hidden;
   font-family: FormaDJRCyrillicDeck;
   background-color: #eef5ff;
   box-sizing: border-box;
@@ -43,7 +44,6 @@ p {
 h1 {
   font-size: 116px;
   font-weight: 110%;
-  margin: 50px 0;
 }
 
 h2 {
@@ -60,6 +60,7 @@ h3 {
 h4 {
   font-size: 26px;
   font-weight: 110%;
+  margin: 0;
 }
 
 button {
@@ -456,6 +457,7 @@ button {
   position: relative;
   font-family: FormaDJRCyrillicDeck;
   color: var(--base-blue);
+  margin-bottom: 600px;
 }
 
 .order-text {
@@ -519,6 +521,50 @@ button {
   font-weight: 400;
   border-radius: 60px;
   padding-left: 20px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 120vh;
+  height: 50vw;
+  position: relative;
+  color: var(--base-blue);
+}
+
+.location-text {
+  display: grid;
+  grid-template-columns: 270px 400px;
+  grid-template-rows: 100px 120px;
+  width: fit-content;
+  background: white;
+  border-radius: 60px;
+  padding: 30px;
+}
+
+.location-text h2:nth-child(odd) {
+  grid-column: 1 / span 2;
+}
+
+.location-text h2:nth-child(even) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.location-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 60px;
+  padding: 30px 80px;
+  background: white;
+}
+
+.location-address-tag {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 @font-face {
