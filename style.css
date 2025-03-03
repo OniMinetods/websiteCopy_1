@@ -56,6 +56,10 @@ h4 {
   font-weight: 110%;
 }
 
+button {
+  border: 0;
+}
+
 .panton-h2 {
   font-family: PantonRustScript;
   font-size: 64px;
@@ -70,7 +74,7 @@ h4 {
   color: var(--red);
 }
 
-.bg-image {
+.header-container-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,7 +94,7 @@ h4 {
   text-align: center;
 }
 
-.header-menu {
+.header-container-menu {
   position: relative;
   display: flex;
   gap: 20px;
@@ -104,21 +108,21 @@ h4 {
   border: 1px;
 }
 
-.header-menu a {
+.header-container-menu a {
   color: var(--base-blue);
 }
 
-.svgPhone {
+.header-container-contacts {
   display: flex;
   gap: 10px;
   align-content: center;
 }
 
-.number {
+.header-container-contacts-number {
   color: var(--base-blue);
 }
 
-.details {
+.header-container-details {
   border-radius: 100px;
   background: var(--base-blue);
   padding: 30px;
@@ -147,22 +151,14 @@ h4 {
   margin-bottom: 214px;
 }
 
-.dp1,
-.dp2,
-.dp3,
-.dp4 {
-  border-radius: 35px;
-  padding: 20px;
-}
-
-.dp1,
-.dp3 {
+.description-photo .photo-item:nth-child(2n + 1) {
   background: var(--base-blue);
   color: var(--white);
 }
 
-.dp2,
-.dp4 {
+.photo-item {
+  border-radius: 35px;
+  padding: 20px;
   background: rgb(211, 211, 211);
   color: var(--base-blue);
 }
@@ -480,7 +476,7 @@ h4 {
 
 .order-form-forms {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 5fr 5fr;
   gap: 30px;
 }
 
@@ -489,6 +485,7 @@ h4 {
   flex-flow: column wrap;
   justify-content: center;
   align-items: start;
+  margin: 0;
 }
 
 .order-form {
@@ -501,15 +498,11 @@ h4 {
 }
 
 .order-form-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: var(--linear-red);
   color: white;
   font-size: 24px;
   font-weight: 400;
 }
-
 .order-text {
   display: flex;
   align-items: center;
