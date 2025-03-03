@@ -242,7 +242,6 @@ button {
   font-weight: 500;
   font-size: 45px;
   color: var(--base-blue);
-  margin-bottom: 220px;
 }
 
 .rewards {
@@ -384,7 +383,7 @@ button {
 .discounts {
   position: relative;
   overflow: visible;
-  margin-bottom: 330px;
+  margin-bottom: 500px;
   color: white;
 }
 
@@ -459,7 +458,19 @@ button {
   color: var(--base-blue);
 }
 
-.order-photo {
+.order-text {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--base-blue);
+}
+
+.order-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.order-block-photo {
   width: 550px;
   height: 400px;
   margin-left: 100px;
@@ -468,18 +479,13 @@ button {
   border-radius: 60px;
 }
 
-.order-form-all {
-  display: flex;
-  justify-content: space-around;
-}
-
-.order-form-forms {
+.order-block-form {
   display: grid;
   grid-template-columns: 5fr 5fr;
   gap: 30px;
 }
 
-.order-form-forms p {
+.order-block-form p {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -487,29 +493,26 @@ button {
   margin: 0;
 }
 
-.order-form {
+.order-block-form-table {
   border-radius: 60px;
   padding: 5px 15px;
 }
 
-.order-form-tarif {
+.order-block-form-table-tarif {
   grid-column: 1 / span 2;
 }
 
 .order-block-button {
   background: var(--linear-red);
   color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
   font-size: 24px;
   font-weight: 400;
 }
-.order-text {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  color: var(--base-blue);
-}
 
-.order-form-text {
+.order-block-text {
   color: var(--base-blue);
   font-family: FormaDJRCyrillicDeck;
   font-size: 20px;
