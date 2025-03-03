@@ -58,7 +58,7 @@ h4 {
 
 .panton-h2 {
   font-family: PantonRustScript;
-  font-size: 90px;
+  font-size: 64px;
   font-weight: 110;
   color: var(--red);
 }
@@ -243,13 +243,15 @@ h4 {
 }
 
 .rewards {
+  position: relative;
   padding: 30px;
-  background: white;
+  margin-bottom: 300px;
 }
 
 .rewards-text {
   color: var(--base-blue);
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
@@ -264,7 +266,7 @@ h4 {
 .rewards-photo-1-background {
   padding: 30px;
   background: var(--light-blue);
-  border-radius: 35px;
+  border-radius: 60px;
 }
 
 .rewards-photo-1-text {
@@ -275,6 +277,7 @@ h4 {
 .programs-text {
   color: var(--base-blue);
   display: flex;
+  align-items: center;
   gap: 30px;
   margin-bottom: 140px;
 }
@@ -379,6 +382,7 @@ h4 {
 .discounts {
   position: relative;
   overflow: visible;
+  margin-bottom: 330px;
 }
 
 .bg-image2 {
@@ -391,12 +395,12 @@ h4 {
 
 .discounts-text {
   display: flex;
+  align-items: center;
   gap: 40px;
   color: var(--base-blue);
 }
 
 .discounts-photos {
-  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -414,6 +418,7 @@ h4 {
 .discounts-photos-card1,
 .discounts-photos-card2,
 .discounts-photos-card3 {
+  position: relative;
   padding: 30px;
   border-radius: 60px;
   background: var(--light-blue);
@@ -424,9 +429,9 @@ h4 {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 25%;
-  top: 10%;
-  padding: 20px;
+  width: 70%;
+  top: 7%;
+  padding: 25px;
 }
 
 .discounts-photos-text-2 {
@@ -435,6 +440,22 @@ h4 {
   padding: 25px;
   font-size: 20px;
   font-weight: 700;
+}
+
+.comment-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--base-blue);
+  margin-bottom: 240px;
+}
+
+.wave-svg {
+  position: absolute;
+  left: 6.5%;
+  top: 48%;
 }
 
 @font-face {
