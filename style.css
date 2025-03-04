@@ -44,6 +44,7 @@ p {
 h1 {
   font-size: 116px;
   font-weight: 110%;
+  margin: 0;
 }
 
 h2 {
@@ -153,7 +154,7 @@ button {
 
 .preview {
   text-align: left;
-  margin-bottom: 130px;
+  margin-bottom: 200px;
   color: var(--base-blue);
 }
 
@@ -165,7 +166,7 @@ button {
   background: white;
   border-radius: 60px;
   padding: 30px;
-  margin-bottom: 214px;
+  margin-bottom: 350px;
 }
 
 .description-photo .description-photo-item:nth-child(2n + 1) {
@@ -187,6 +188,7 @@ button {
 }
 
 .company {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -194,6 +196,12 @@ button {
   color: white;
   gap: 10px;
   margin-bottom: 282px;
+}
+
+.company-background-image {
+  position: absolute;
+  top: -360px;
+  z-index: -1;
 }
 
 .company-screen {
