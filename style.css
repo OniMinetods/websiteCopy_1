@@ -135,9 +135,14 @@ button {
 }
 
 .header-container-details {
+  display: flex;
+  gap: 30px;
   border-radius: 100px;
   background: var(--base-blue);
-  padding: 30px;
+  padding: 15px 25px;
+}
+
+.header-container-details a {
   color: white;
 }
 
