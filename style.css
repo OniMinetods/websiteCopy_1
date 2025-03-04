@@ -97,7 +97,6 @@ button {
   align-items: center;
   gap: 50px;
   margin-bottom: 130px;
-  padding: 0 254px;
   text-align: center;
 }
 
@@ -105,18 +104,24 @@ button {
   position: relative;
   display: flex;
   gap: 20px;
-  width: fit-content;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
   background: white;
+  padding: 5px;
   color: var(--base-blue);
-  padding: 20px 30px;
   border: 1px;
 }
 
 .header-container-menu a {
   color: var(--base-blue);
+  padding: 15px 15px;
+  border-radius: 60px;
+}
+
+.header-container-menu :hover {
+  color: white;
+  background: var(--base-blue);
 }
 
 .header-container-contacts {
