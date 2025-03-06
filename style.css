@@ -12,6 +12,95 @@
   --base-text-50: var(--base-text) 50%;
 }
 
+@media (max-width: 320px) {
+  .text-16,
+  .text-20 {
+    font-size: 12px;
+    font-weight: 120%;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 110%;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 110%;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 110%;
+  }
+  .panton-h2 {
+    font-family: PantonRustScript;
+    font-size: 22px;
+    font-weight: auto;
+    color: var(--red);
+  }
+
+  .panton-h4 {
+    font-family: PantonRustScript;
+    font-size: 22px;
+    font-weight: auto;
+    color: var(--red);
+  }
+}
+
+@media (min-width: 1920px) {
+  .text-16 {
+    font-size: 16px;
+    font-weight: 120%;
+    margin: 8px 0;
+  }
+
+  .text-20 {
+    font-size: 20px;
+    font-weight: 120%;
+    margin: 8px 0;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 120%;
+    margin: 8px 0;
+  }
+
+  h1 {
+    font-size: 116px;
+    font-weight: 110%;
+  }
+
+  h2 {
+    font-size: 90px;
+    font-weight: 110%;
+  }
+
+  h3 {
+    font-size: 45px;
+    font-weight: 120%;
+    margin: 8px 0;
+  }
+
+  h4 {
+    font-size: 26px;
+    font-weight: 110%;
+    margin: 0;
+  }
+  .panton-h2 {
+    font-family: PantonRustScript;
+    font-size: 64px;
+    font-weight: 110;
+    color: var(--red);
+  }
+
+  .panton-h4 {
+    font-family: PantonRustScript;
+    font-size: 26px;
+    font-weight: 120%;
+    color: var(--red);
+  }
+}
+
 a:link {
   text-decoration: none;
 }
@@ -23,63 +112,12 @@ body {
   box-sizing: border-box;
 }
 
-.text-16 {
-  font-size: 16px;
-  font-weight: 120%;
-  margin: 8px 0;
-}
-
-.text-20 {
-  font-size: 20px;
-  font-weight: 120%;
-  margin: 8px 0;
-}
-
-p {
-  font-size: 20px;
-  font-weight: 120%;
-  margin: 8px 0;
-}
-
-h1 {
-  font-size: 116px;
-  font-weight: 110%;
-  margin: 0;
-}
-
-h2 {
-  font-size: 90px;
-  font-weight: 110%;
-}
-
-h3 {
-  font-size: 45px;
-  font-weight: 120%;
-  margin: 8px 0;
-}
-
-h4 {
-  font-size: 26px;
-  font-weight: 110%;
-  margin: 0;
-}
-
 button {
   border: 0;
 }
 
-.panton-h2 {
-  font-family: PantonRustScript;
-  font-size: 64px;
-  font-weight: 110;
-  color: var(--red);
-}
-
-.panton-h4 {
-  font-family: PantonRustScript;
-  font-size: 26px;
-  font-weight: 120%;
-  color: var(--red);
+button:active {
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
 .header-container-image {
@@ -88,7 +126,9 @@ button {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url("public/bg-image\ 1.png") no-repeat center top / cover;
+  background-image: url("public/bg-image\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
   z-index: -1;
 }
 
@@ -544,9 +584,8 @@ button {
 .location {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  width: 120vh;
-  height: 50vw;
   position: relative;
   color: var(--base-blue);
 }
@@ -572,10 +611,10 @@ button {
 
 .location-address {
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
   align-items: center;
   border-radius: 60px;
-  padding: 30px 80px;
+  padding: 30px 50px;
   background: white;
 }
 
@@ -599,61 +638,11 @@ button {
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicMicro-ExtraLight-Testing.woff2")
-      format("woff2"),
-    url("fonts/FormaDJRCyrillicMicro-ExtraLight-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicMicro";
-  font-style: normal;
-  font-weight: 275;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicMicro-Light-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicMicro-Light-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicMicro";
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
   src: url("fonts/FormaDJRCyrillicMicro-Regular-Testing.woff2") format("woff2"),
     url("fonts/FormaDJRCyrillicMicro-Regular-Testing.woff") format("woff");
   font-family: "FormaDJRCyrillicMicro";
   font-style: normal;
   font-weight: normal;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicMicro-Medium-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicMicro-Medium-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicMicro";
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicMicro-Bold-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicMicro-Bold-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicMicro";
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicText-ExtraLight-Testing.woff2")
-      format("woff2"),
-    url("fonts/FormaDJRCyrillicText-ExtraLight-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicText";
-  font-style: normal;
-  font-weight: 275;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicText-Light-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicText-Light-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicText";
-  font-style: normal;
-  font-weight: 300;
 }
 
 @font-face {
@@ -665,77 +654,11 @@ button {
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicText-Medium-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicText-Medium-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicText";
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("./fonts/FormaDJRCyrillicText-Bold-Testing.woff2") format("woff2"),
-    url("./fonts/FormaDJRCyrillicText-Bold-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicText";
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicDeck-ExtraLight-Testing.woff2")
-      format("woff2"),
-    url("fonts/FormaDJRCyrillicDeck-ExtraLight-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDeck";
-  font-style: normal;
-  font-weight: 275;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicDeck-Light-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicDeck-Light-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDeck";
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
   src: url("fonts/FormaDJRCyrillicDeck-Regular-Testing.woff2") format("woff2"),
     url("fonts/FormaDJRCyrillicDeck-Regular-Testing.woff") format("woff");
   font-family: "FormaDJRCyrillicDeck";
   font-style: normal;
   font-weight: normal;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicDeck-Medium-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicDeck-Medium-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDeck";
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicDeck-Bold-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicDeck-Bold-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDeck";
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicDisplay-ExtraLight-Testing.woff2")
-      format("woff2"),
-    url("fonts/FormaDJRCyrillicDisplay-ExtraLight-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDisplay";
-  font-style: normal;
-  font-weight: 275;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicDisplay-Light-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicDisplay-Light-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDisplay";
-  font-style: normal;
-  font-weight: 300;
 }
 
 @font-face {
@@ -748,58 +671,9 @@ button {
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicDisplay-Medium-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicDisplay-Medium-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDisplay";
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicDisplay-Bold-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicDisplay-Bold-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDisplay";
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicBanner-ExtraLight-Testing.woff2")
-      format("woff2"),
-    url("fonts/FormaDJRCyrillicBanner-ExtraLight-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicBanner";
-  font-style: normal;
-  font-weight: 275;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicBanner-Light-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicBanner-Light-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicBanner";
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
   src: url("fonts/FormaDJRCyrillicBanner-Regular-Testing.woff2") format("woff2"),
     url("fonts/FormaDJRCyrillicBanner-Regular-Testing.woff") format("woff");
   font-family: "FormaDJRCyrillicBanner";
   font-style: normal;
   font-weight: normal;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicBanner-Medium-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicBanner-Medium-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicBanner";
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("fonts/FormaDJRCyrillicBanner-Bold-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicBanner-Bold-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicBanner";
-  font-style: normal;
-  font-weight: bold;
 }
