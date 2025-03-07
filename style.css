@@ -649,6 +649,18 @@ button:active {
   .description-photo-item:nth-child(n + 4) {
     display: none;
   }
+  .description-photo {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+  }
+  .description-photo-item p {
+    font-size: 12px;
+  }
+  .description-photo-item h4 {
+    font-size: 20px;
+  }
+  .description-photo-item-png {
+    width: 200px;
+  }
   .discounts-photos-card {
     display: flex;
   }
@@ -670,6 +682,34 @@ button:active {
   .company-background-image {
     width: 140vw;
   }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+    gap: 130px;
+  }
+
+  .easy-start-description-mark p,
+  .flow-rider-description-mark p {
+    font-size: 12px;
+  }
+  .easy-start-price-old,
+  .flow-rider-price-old {
+    font-size: 20px;
+  }
+  .easy-start-price-new,
+  .flow-rider-price-new {
+    font-size: 30px;
+  }
+  .easy-start-border-svg,
+  .flow-rider-border-svg {
+    width: 128px;
+  }
+  .easy-start-button,
+  .flow-rider-button {
+    font-size: 18px;
+    padding: 30px 100px;
+  }
+
   .order-block-photo {
     margin-left: 30px;
     max-width: 45%;
