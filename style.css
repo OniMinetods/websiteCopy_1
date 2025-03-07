@@ -495,7 +495,7 @@ button:active {
   position: relative;
   font-family: FormaDJRCyrillicDeck;
   color: var(--base-blue);
-  margin-bottom: 600px;
+  margin-bottom: 400px;
 }
 
 .order-text {
@@ -563,6 +563,7 @@ button:active {
 }
 
 .location {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -574,7 +575,7 @@ button:active {
 .location-text {
   display: grid;
   grid-template-columns: 270px 400px;
-  grid-template-rows: 100px 120px;
+  grid-template-rows: 100px 60px;
   width: fit-content;
   background: white;
   border-radius: 60px;
@@ -583,11 +584,13 @@ button:active {
 
 .location-text h2:nth-child(odd) {
   grid-column: 1 / span 2;
+  margin: 0;
 }
 
 .location-text h2:nth-child(even) {
   grid-column: 2;
   grid-row: 2;
+  margin: 0;
 }
 
 .location-address {
@@ -597,6 +600,27 @@ button:active {
   border-radius: 60px;
   padding: 30px 50px;
   background: white;
+}
+
+.location-address-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 130vh;
+}
+
+.location-address-svg {
+  position: absolute;
+  top: 575px;
+  left: 390px;
+}
+
+.location-address-background {
+  position: absolute;
+  top: 100px;
+  z-index: -1;
 }
 
 .location-address-tag {
