@@ -466,7 +466,7 @@ button:active {
 .discounts {
   position: relative;
   overflow: visible;
-  margin-bottom: 500px;
+  margin-bottom: clamp(400px, 28vw, 500px);
   color: white;
 }
 
@@ -485,6 +485,10 @@ button:active {
 }
 
 .discounts-background-image {
+  height: clamp(700px, 60vw, 1000px);
+}
+
+.order-background-image {
   height: clamp(700px, 60vw, 1000px);
 }
 
@@ -568,7 +572,7 @@ button:active {
 
 .order-block-photo {
   max-width: 100%;
-  width: clamp(400px, 35vw, 550px);
+  width: clamp(300px, 35vw, 550px);
   height: clamp(250px, 25vw, 400px);
   margin-left: clamp(40px, 4vw, 100px);
   object-fit: cover;
