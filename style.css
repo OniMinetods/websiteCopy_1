@@ -484,6 +484,10 @@ button:active {
   height: clamp(700px, 70vw, 1100px);
 }
 
+.discounts-background-image {
+  height: clamp(700px, 60vw, 1000px);
+}
+
 .discounts-text {
   display: flex;
   align-items: center;
