@@ -480,6 +480,10 @@ button:active {
   z-index: -1;
 }
 
+.rewards-background-image {
+  height: clamp(700px, 70vw, 1100px);
+}
+
 .discounts-text {
   display: flex;
   align-items: center;
