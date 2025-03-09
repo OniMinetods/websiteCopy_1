@@ -234,6 +234,7 @@ button:active {
   border-radius: 35px;
   padding: 40px;
   background: var(--base-blue);
+  margin-bottom: 10px;
 }
 
 .company-block-about h3 {
@@ -252,13 +253,24 @@ button:active {
 }
 
 .company-block-members-svg {
+  width: clamp(65px, 5vw, 80px);
   margin-left: -20px;
 }
 
 .company-block-members-text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 20px;
+}
+
+.company-block-members-text h3 {
+  font-size: clamp(30px, 2.6vw, 45px);
+}
+
+.company-block-members-text p {
+  font-size: clamp(16px, 1.5vw, 20px);
 }
 
 .company-block-members-text h3,
@@ -794,6 +806,7 @@ button:active {
   .company-block-members p {
     font-size: 12px;
   }
+
   .company-block-members {
     align-items: center;
   }
