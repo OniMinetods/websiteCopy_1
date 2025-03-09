@@ -325,8 +325,8 @@ button:active {
 
 .rewards-photo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   background-color: var(--light-blue);
   border-radius: 60px;
@@ -339,9 +339,15 @@ button:active {
 }
 
 .rewards-photo-background {
-  display: inline-block;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  background: var(--light-blue);
+  border-radius: 60px;
+  background: white;
+}
+
+.rewards-photo-background-border {
   padding: 30px;
   background: var(--light-blue);
   border-radius: 60px;
@@ -500,7 +506,7 @@ button:active {
 }
 
 .rewards-background-image {
-  height: clamp(700px, 70vw, 1100px);
+  height: clamp(800px, 70vw, 1100px);
 }
 
 .discounts-background-image {
@@ -803,7 +809,12 @@ button:active {
     width: 55px;
   }
 
-  .discounts-photos-card {
+  .rewards-photo-png {
+    width: clamp(280px, 30vw, 300px);
+    height: auto;
+  }
+
+  .rewards-photo-text .discounts-photos-card {
     display: flex;
   }
   .discounts-photos-card-png {
@@ -814,9 +825,6 @@ button:active {
   .discounts-photos-card-text-down p {
     font-size: 12px;
     font-weight: 120%;
-  }
-  .rewards-photo-png {
-    width: 40%;
   }
   .discounts-background-image,
   .order-background-image,
@@ -865,6 +873,17 @@ button:active {
   .location-text {
     grid-template-columns: 170px 240px;
     grid-template-rows: 40px 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .rewards-photo-background {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rewards-background-image {
   }
 }
 
