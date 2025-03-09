@@ -357,6 +357,11 @@ button:active {
   margin: 0 15px;
 }
 
+.easy-start-border h3,
+.flow-rider-border h3 {
+  font-size: clamp(20px, 2.5vw, 45px);
+}
+
 .easy-start-text,
 .flow-rider-text {
   text-align: center;
@@ -368,6 +373,16 @@ button:active {
   display: flex;
   gap: 50px;
   margin-bottom: 30px;
+}
+
+.easy-start-info p.text-16,
+.flow-rider-info p.text-16 {
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+.easy-start-info p.text-20,
+.flow-rider-info p.text-20 {
+  font-size: clamp(16px, 1.2vw, 20px);
 }
 
 .easy-start-info-course,
@@ -396,7 +411,7 @@ button:active {
 
 .easy-start-price-old,
 .flow-rider-price-old {
-  font-size: 30px;
+  font-size: clamp(15px, 1.6vw, 30px);
   font-weight: 400;
   text-decoration: line-through;
   margin: 8px 0;
@@ -404,7 +419,7 @@ button:active {
 
 .easy-start-price-new,
 .flow-rider-price-new {
-  font-size: 50px;
+  font-size: clamp(30px, 2vw, 50px);
   font-weight: 700;
   margin: 8px 0;
 }
@@ -413,7 +428,7 @@ button:active {
 .flow-rider-button {
   background: var(--linear-red);
   padding: 30px 200px;
-  font-size: 24px;
+  font-size: clamp(16px, 1.4vw, 24px);
   font-weight: 700;
   border-radius: 100px;
   color: white;
@@ -421,6 +436,7 @@ button:active {
 
 .easy-start-border-svg,
 .flow-rider-border-svg {
+  width: clamp(20%, 15vw, 40%);
   position: absolute;
   top: 0;
   transform: translate(-50%, -80%);
