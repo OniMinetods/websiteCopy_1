@@ -907,6 +907,86 @@ button:active {
   .order-background-image {
     height: clamp(1400px, 170vw, 1500px);
   }
+  .discounts-photos-card-png {
+    width: 350px;
+    height: 350px;
+  }
+
+  .online-svg {
+    display: none;
+  }
+
+  .location-address {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .location-address-social {
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .location-address-contacts {
+    justify-content: center;
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .location-address-tag {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .location-address-bus {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .location-address-social,
+  .location-address-contacts {
+    display: flex;
+    gap: 20px;
+  }
+
+  .location-address-social p,
+  .location-address-tag p,
+  .location-address-contacts p {
+    font-size: clamp(12px, 1.7vw, 16px);
+  }
+
+  .location-address-bus h4 {
+    font-size: clamp(16px, 2.8vw, 26px);
+  }
+  .location-address-bus p {
+    font-size: clamp(12px, 1.7vw, 16px);
+  }
+  .footer-common h4 {
+    font-size: clamp(20px, 3vw, 26px);
+  }
+  .footer p {
+    font-size: clamp(10px, 1.8vw, 16px);
+  }
+}
+
+@media (max-width: 700px) {
+  .company-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .company-surfer-photo {
+    height: auto;
+  }
+  .company-surfer-overlay {
+    width: clamp(100px, 27vw, 150px);
+  }
+
+  h2 {
+    font-size: clamp(26px, 5vw, 32px);
+  }
+
+  .panton-h2 {
+    font-size: clamp(22px, 5vw, 32px);
+  }
 }
 
 @media (max-width: 320px) {
