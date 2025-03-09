@@ -468,8 +468,8 @@ button:active {
 }
 
 .discounts-photos-card-png {
-  width: 350px;
-  height: 350px;
+  width: clamp(200px, 20vw, 350px);
+  height: clamp(200px, 20vw, 350px);
   object-fit: cover;
   border-radius: 35px;
   filter: brightness(70%);
@@ -483,6 +483,10 @@ button:active {
   position: absolute;
   top: 0;
   padding: 30px;
+}
+
+.discounts-photos-card-text-up p.text-16 {
+  font-size: clamp(12px, 1vw, 16px);
 }
 
 .discounts-photos-card-text-down {
