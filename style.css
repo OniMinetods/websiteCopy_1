@@ -121,6 +121,10 @@ button:active {
   border-radius: 60px;
 }
 
+.header-container-menu.text-16 {
+  font-size: clamp(12px, 0.9vw, 16px);
+}
+
 .header-container-menu :hover {
   color: white;
   background: var(--base-blue);
@@ -133,6 +137,7 @@ button:active {
 }
 
 .header-container-contacts-number {
+  font-size: clamp(15px, 1.5vw, 26px);
   color: var(--base-blue);
 }
 
@@ -145,6 +150,7 @@ button:active {
 }
 
 .header-container-details a {
+  font-size: clamp(12px, 0.9vw, 16px);
   color: white;
 }
 
@@ -197,12 +203,13 @@ button:active {
   align-content: stretch;
   color: white;
   gap: 10px;
-  margin-bottom: 282px;
+  margin-bottom: clamp(300px, 30vw, 600px);
 }
 
 .company-background-image {
   position: absolute;
-  top: -300px;
+  top: -250px;
+  height: 150vh;
   z-index: -1;
 }
 
@@ -467,7 +474,7 @@ button:active {
 .order-background-image,
 .rewards-background-image {
   position: absolute;
-  top: -50px;
+  top: -100px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
@@ -698,6 +705,12 @@ button:active {
 .footer-copyright {
   display: flex;
   justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .header-container-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
