@@ -268,7 +268,7 @@ button:active {
 
 .comment-text {
   font-weight: 500;
-  font-size: 45px;
+  font-size: clamp(25px, 2.5vw, 45px);
   color: var(--base-blue);
 }
 
@@ -342,6 +342,7 @@ button:active {
   color: var(--base-blue);
   display: flex;
   align-content: center;
+  justify-content: center;
 }
 
 .easy-start-border,
