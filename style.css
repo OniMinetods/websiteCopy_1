@@ -24,36 +24,36 @@ body {
 }
 
 .text-16 {
-  font-size: 16px;
+  font-size: clamp(12px, 6vw, 16px);
   font-weight: 120%;
   margin: 8px 0;
 }
 
 .text-20 {
-  font-size: 20px;
+  font-size: clamp(16px, 6vw, 20px);
   font-weight: 120%;
   margin: 8px 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: clamp(16px, 1.5vw, 20px);
   font-weight: 120%;
   margin: 8px 0;
 }
 
 h1 {
   margin: 20px 0;
-  font-size: 116px;
+  font-size: clamp(40px, 6vw, 116px);
   font-weight: 110%;
 }
 
 h2 {
-  font-size: 90px;
+  font-size: clamp(32px, 4.1vw, 90px);
   font-weight: 110%;
 }
 
 h3 {
-  font-size: 45px;
+  font-size: clamp(25px, 4vw, 45px);
   font-weight: 120%;
   margin: 8px 0;
 }
@@ -65,7 +65,7 @@ h4 {
 }
 .panton-h2 {
   font-family: PantonRustScript;
-  font-size: 64px;
+  font-size: clamp(32px, 3.5vw, 64px);
   font-weight: 110;
   color: var(--red);
 }
@@ -296,7 +296,7 @@ button:active {
 }
 
 .rewards-photo-png {
-  max-width: 100%;
+  width: clamp(300px, 35vw, 600px);
   height: auto;
 }
 
@@ -312,6 +312,14 @@ button:active {
 .rewards-photo-text {
   padding: 30px;
   color: var(--base-blue);
+}
+
+.rewards-photo-text h3 {
+  font-size: clamp(25px, 2vw, 45px);
+}
+
+.rewards-photo-text p {
+  font-size: clamp(12px, 1.2vw, 20px);
 }
 
 .programs-text {
@@ -660,40 +668,6 @@ button:active {
 }
 
 @media (max-width: 1024px) {
-  .text-16 {
-    font-size: 10px;
-    font-weight: 120%;
-  }
-  .text-20 {
-    font-size: 16px;
-    font-weight: 120%;
-  }
-  h1 {
-    font-size: 64px;
-    font-weight: 110%;
-  }
-  h2 {
-    font-size: 48px;
-    font-weight: 110%;
-  }
-
-  h3 {
-    font-size: 25px;
-    font-weight: 110%;
-  }
-  .panton-h2 {
-    font-family: PantonRustScript;
-    font-size: 36px;
-    font-weight: auto;
-    color: var(--red);
-  }
-
-  .panton-h4 {
-    font-family: PantonRustScript;
-    font-size: 36px;
-    font-weight: auto;
-    color: var(--red);
-  }
   .header-container-menu {
     display: none;
   }
@@ -786,6 +760,15 @@ button:active {
     padding: 10px;
   }
 
+  .comment-text {
+    font-size: 25px;
+  }
+
+  .location-text {
+    grid-template-columns: 170px 240px;
+    grid-template-rows: 40px 40px;
+  }
+
   .company-block-about p,
   .company-block-members p {
     font-size: 12px;
@@ -832,6 +815,10 @@ button:active {
   }
   .header-container-menu,
   .header-container-contacts-number {
+    display: none;
+  }
+
+  img {
     display: none;
   }
 }
