@@ -877,6 +877,7 @@ button:active {
 
 @media (max-width: 900px) {
   .rewards-photo-background {
+    border-radius: 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
