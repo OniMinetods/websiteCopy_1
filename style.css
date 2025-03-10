@@ -832,6 +832,9 @@ button:active {
   .company-background-image {
     width: 140vw;
   }
+  .company-background-image {
+    height: 100vh;
+  }
 
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
@@ -883,6 +886,14 @@ button:active {
     align-items: center;
   }
 
+  .company-background-image {
+    height: 115vh;
+  }
+
+  .company {
+    margin-bottom: 350px;
+  }
+
   .order-block-photo {
     width: 70vw;
     height: auto;
@@ -911,6 +922,10 @@ button:active {
   .discounts-photos-card-png {
     width: 350px;
     height: 350px;
+  }
+
+  .discounts-background-image {
+    height: 140vh;
   }
 
   .online-svg {
