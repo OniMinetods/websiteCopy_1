@@ -1013,6 +1013,15 @@ button:active {
   }
 }
 
+@media (max-width: 620px) {
+  .company-background-image {
+    top: -70px;
+  }
+  .description-photo {
+    margin-bottom: 100px;
+  }
+}
+
 @media (max-width: 520px) {
   .rewards-text {
     display: grid;
@@ -1026,6 +1035,18 @@ button:active {
     h2 {
       margin: 0;
     }
+  }
+  .header-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header-container-details {
+    padding: 10px 15px;
+  }
+
+  .header-container img {
+    width: 10%;
   }
 }
 
