@@ -1112,6 +1112,13 @@ button:active {
   .footer-copyright p:nth-child(1) {
     order: 3;
   }
+  .preview {
+    margin-bottom: 500px;
+  }
+  .header-container-image {
+    top: calc(700px - 120vw);
+    left: -1100px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1148,10 +1155,6 @@ button:active {
   }
   .header-container-menu,
   .header-container-contacts-number {
-    display: none;
-  }
-
-  img {
     display: none;
   }
 }
