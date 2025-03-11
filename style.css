@@ -724,7 +724,6 @@ button:active {
 .footer-common {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   margin-bottom: 120px;
 }
 .footer h4 {
@@ -886,6 +885,10 @@ button:active {
     align-items: center;
   }
 
+  .rewards {
+    margin-bottom: 100px;
+  }
+
   .company-background-image {
     height: 115vh;
   }
@@ -965,21 +968,28 @@ button:active {
 
   .location-address-social p,
   .location-address-tag p,
-  .location-address-contacts p {
-    font-size: clamp(12px, 1.7vw, 16px);
+  .location-address-contacts p,
+  .location-address-bus p {
+    font-size: 16px;
   }
 
   .location-address-bus h4 {
-    font-size: clamp(16px, 2.8vw, 26px);
-  }
-  .location-address-bus p {
-    font-size: clamp(12px, 1.7vw, 16px);
+    font-size: 20px;
   }
   .footer-common h4 {
     font-size: clamp(20px, 3vw, 26px);
   }
   .footer p {
     font-size: clamp(10px, 1.8vw, 16px);
+  }
+}
+
+@media (max-width: 827px) {
+  .discounts {
+    margin-bottom: 200px;
+  }
+  .discounts-background-image {
+    height: 160vh;
   }
 }
 
@@ -1016,6 +1026,10 @@ button:active {
 @media (max-width: 620px) {
   .company-background-image {
     top: -70px;
+    height: 100vh;
+  }
+  .company {
+    margin-bottom: 200px;
   }
   .description-photo {
     margin-bottom: 100px;
@@ -1047,6 +1061,56 @@ button:active {
 
   .header-container img {
     width: 10%;
+  }
+
+  .location-text {
+    grid-template-columns: 100px 200px;
+    padding: 20px;
+    border-radius: 60px;
+  }
+
+  .footer-common {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .location-address {
+    padding: 30px 10px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+  .footer-common {
+    display: grid;
+    grid-template-columns: 190px 150px;
+    grid-template-rows: 180px 100px;
+    gap: 0;
+  }
+  .footer-way:nth-child(1) {
+    order: 3;
+  }
+
+  .footer-copyright {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer-way p,
+  .footer-contacts-svg {
+    display: none;
+  }
+
+  .footer-copyright {
+    display: grid;
+    grid-template-rows: repeat(3, 30px);
+    text-align: center;
+  }
+
+  .footer-copyright p:nth-child(1) {
+    order: 3;
   }
 }
 
