@@ -1,58 +1,59 @@
 @font-face {
-  font-family: PantonRustScript;
+  font-family: Panton;
   src: url(fonts/Panton-Rust-Script.ttf);
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicVariable-VF-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicVariable-VF-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicVariable";
+  src: url('fonts/FormaDJRCyrillicVariable-VF-Testing.woff2') format('woff2'),
+    url('fonts/FormaDJRCyrillicVariable-VF-Testing.woff') format('woff');
+  font-family: 'FormaDJRCyrillicVariable';
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicMicro-Regular-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicMicro-Regular-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicMicro";
+  src: url('fonts/FormaDJRCyrillicMicro-Regular-Testing.woff2') format('woff2'),
+    url('fonts/FormaDJRCyrillicMicro-Regular-Testing.woff') format('woff');
+  font-family: 'FormaDJRCyrillicMicro';
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicText-Regular-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicText-Regular-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicText";
+  src: url('fonts/FormaDJRCyrillicText-Regular-Testing.woff2') format('woff2'),
+    url('fonts/FormaDJRCyrillicText-Regular-Testing.woff') format('woff');
+  font-family: 'FormaDJRCyrillicText';
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicDeck-Regular-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicDeck-Regular-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDeck";
+  src: url('fonts/FormaDJRCyrillicDeck-Regular-Testing.woff2') format('woff2'),
+    url('fonts/FormaDJRCyrillicDeck-Regular-Testing.woff') format('woff');
+  font-family: 'FormaDJRCyrillicDeck';
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicDisplay-Regular-Testing.woff2")
-      format("woff2"),
-    url("fonts/FormaDJRCyrillicDisplay-Regular-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicDisplay";
+  src: url('fonts/FormaDJRCyrillicDisplay-Regular-Testing.woff2')
+      format('woff2'),
+    url('fonts/FormaDJRCyrillicDisplay-Regular-Testing.woff') format('woff');
+  font-family: 'FormaDJRCyrillicDisplay';
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fonts/FormaDJRCyrillicBanner-Regular-Testing.woff2") format("woff2"),
-    url("fonts/FormaDJRCyrillicBanner-Regular-Testing.woff") format("woff");
-  font-family: "FormaDJRCyrillicBanner";
+  src: url('fonts/FormaDJRCyrillicBanner-Regular-Testing.woff2') format('woff2'),
+    url('fonts/FormaDJRCyrillicBanner-Regular-Testing.woff') format('woff');
+  font-family: 'FormaDJRCyrillicBanner';
   font-style: normal;
   font-weight: normal;
 }
 
 :root {
+  font-size: 62.5%;
   --linear-red: linear-gradient(#ff372a, #ff1514);
   --red: #ff3a35;
   --white: #ffffff;
@@ -66,69 +67,47 @@
   --base-text-50: var(--base-text) 50%;
 }
 
-a:link {
-  text-decoration: none;
+a {
+  color: var(--base-blue);
 }
 
-body {
-  overflow-x: hidden;
-  font-family: FormaDJRCyrillicDeck;
-  background-color: var(--light-blue);
-  box-sizing: border-box;
-}
-
-.text-16 {
-  font-size: clamp(12px, 6vw, 16px);
-  font-weight: 120%;
-  margin: 8px 0;
-}
-
-.text-20 {
-  font-size: clamp(16px, 6vw, 20px);
-  font-weight: 120%;
-  margin: 8px 0;
-}
-
-p {
-  font-size: clamp(16px, 1.5vw, 20px);
-  font-weight: 120%;
-  margin: 8px 0;
+ol,
+ul {
+  list-style: none;
 }
 
 h1 {
-  margin: 20px 0;
-  font-size: clamp(40px, 6vw, 116px);
-  font-weight: 110%;
+  display: none;
 }
 
-h2 {
-  font-size: clamp(32px, 4.1vw, 90px);
-  font-weight: 110%;
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-h3 {
-  font-size: clamp(25px, 4vw, 45px);
-  font-weight: 120%;
-  margin: 8px 0;
+a:link {
+  text-decoration: none;
 }
-
-h4 {
-  font-size: 26px;
-  font-weight: 110%;
-  margin: 10px 0;
-}
-.panton-h2 {
-  font-family: PantonRustScript;
-  font-size: clamp(32px, 3.5vw, 64px);
-  font-weight: 110;
-  color: var(--red);
-}
-
-.panton-h4 {
-  font-family: PantonRustScript;
-  font-size: 26px;
-  font-weight: 120%;
-  color: var(--red);
+body {
+  font-family: 'FormaDJRCyrillicDeck';
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  background-color: var(--light-blue);
+  color: var(--base-blue);
+  box-sizing: border-box;
 }
 
 button {
@@ -139,144 +118,187 @@ button:active {
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
-.header-container-image {
+header {
   position: absolute;
-  top: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  z-index: -1;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem 20rem 0 20rem;
+  z-index: 1;
 }
 
 .header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
-  margin-bottom: 130px;
   text-align: center;
 }
 
-.header-container-menu {
-  position: relative;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
+.header-container__menu.menu {
   border-radius: 100px;
   background: white;
   padding: 5px;
-  color: var(--base-blue);
-  border: 1px;
 }
 
-.header-container-menu a {
+.header-container__menu .menu-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.header-container__menu .menu-link {
   color: var(--base-blue);
   padding: 15px 15px;
   border-radius: 60px;
 }
 
-.header-container-menu.text-16 {
-  font-size: clamp(12px, 0.9vw, 16px);
-}
-
-.header-container-menu :hover {
+.header-container__menu .menu-link:hover {
   color: white;
   background: var(--base-blue);
 }
 
-.header-container-contacts {
+.header-container__contacts {
   display: flex;
-  gap: 10px;
-  align-content: center;
+  gap: 1rem;
+  align-items: center;
 }
 
-.header-container-contacts-number {
-  font-size: clamp(15px, 1.5vw, 26px);
+.header-container__contacts .contacts-number {
+  font-weight: 600;
   color: var(--base-blue);
 }
 
-.header-container-details {
+.header-container__details.details {
   display: flex;
   gap: 30px;
   border-radius: 100px;
   background: var(--base-blue);
-  padding: 15px 25px;
+  padding: 20px 25px;
 }
 
-.header-container-details a {
-  font-size: clamp(12px, 0.9vw, 16px);
+.header-container__details .details-text {
   color: white;
 }
 
-.main-container {
-  padding: 0 clamp(50px, 10vw, 200px);
+.custom-font {
+  font-family: 'Panton';
+  color: var(--red);
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.preview-block {
+  background-image: url('public/bg-image-preview.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0;
 }
 
 .preview {
   text-align: left;
-  margin-bottom: 200px;
+  padding: 16rem 20rem 12rem 20rem;
   color: var(--base-blue);
 }
 
-.description-photo {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
-  gap: 20px;
-  background: var(--light-blue);
-  border-radius: 60px;
-  padding: 30px;
-  margin-bottom: 350px;
-  z-index: -1;
+.preview-street {
+  margin-bottom: 2rem;
 }
 
-.description-photo .description-photo-item:nth-child(2n + 1) {
+.preview-slogan {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 12rem;
+  margin-bottom: 3rem;
+  width: 70vw;
+}
+
+.preview-desc {
+  width: 30%;
+}
+
+.description-block {
+  padding: 0 18rem;
+  margin-bottom: 30rem;
+}
+
+.description-photo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--light-blue);
+  border-radius: 4rem;
+  padding: 2rem;
+  width: 100%;
+  z-index: -10;
+}
+
+.item-head-text {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.item-main-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.description-photo__item:nth-child(2n + 1) {
   background: var(--base-blue);
   color: var(--white);
 }
 
-.description-photo-item {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 35px;
+.description-photo__item {
+  border-radius: 3rem;
   background: white;
-  padding: 20px;
+  padding: 2rem;
   color: var(--base-blue);
 }
 
-.company-full {
-  display: flex;
-  flex-direction: column;
+.description-photo__item img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .company-text {
-  display: grid;
-  grid-template-columns: clamp(50px, 9vw, 150px) 600px;
-  grid-template-rows: clamp(30px, 4vw, 60px) clamp(30px, 4vw, 60px);
-  color: var(--base-blue);
-  max-width: 900px;
-  margin-bottom: 30px;
-  .panton-h2 {
-    grid-column: 2;
-    grid-row: 2;
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  margin-bottom: 3rem;
 }
 
-.company-text :nth-child(2n + 1) {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  margin: 0;
+.head-text {
+  font-size: 9rem;
+  font-weight: 700;
+  color: var(--base-blue);
+  line-height: 12rem;
+}
+
+.custom-text {
+  font-family: 'Panton';
+  font-size: 6.4rem;
+  font-weight: 400;
+  color: var(--red);
+  text-align: end;
 }
 
 .company {
   position: relative;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: stretch;
+  flex-direction: column;
   color: white;
-  gap: 10px;
-  margin-bottom: clamp(300px, 30vw, 600px);
+  gap: 1rem;
+  margin-bottom: 30rem;
+  padding: 0 20rem;
+}
+
+.conpany-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .company-background-image {
@@ -287,7 +309,9 @@ button:active {
 }
 
 .company-screen {
-  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .company-surfer-photo {
@@ -828,10 +852,6 @@ button:active {
 
   h2.panton-h2 {
     font-size: clamp(22px, 7vw, 32px);
-  }
-
-  .company-text {
-    align-items: start;
   }
 
   .company-surfer-photo {
