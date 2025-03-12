@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Язык сайта русский исправить -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title></title>
+    <!-- <title></title> must not be empty -->
   </head>
   <body>
     <header>
       <div class="header-container">
         <img src="public/Лого (1).svg" alt="logo" />
+        <!-- Обернуть в <a></a> -->
         <div class="header-container-menu text-16">
+          <!-- Назвать по БЭМУ -->
+          <!-- сделать nav -->
+          <!-- <ul class = "menu-list">
+            <li class="menu-item"><a class="menu-link" href="#">Главная</a></li>
+          </ul> -->
           <a href="#">Главная</a>
           <a href="#">О нас</a>
           <a href="#">Награды</a>
@@ -20,6 +28,8 @@
           <a href="#">Контакты</a>
         </div>
         <div class="header-container-contacts">
+          <!-- Обернуть в тег адрес -->
+          <!-- Переназвать иконки корректно -->
           <img src="public/State=Default.svg" alt="Telegram" class="telegram" />
           <img
             src="public/Property 1=Default.svg"
@@ -31,23 +41,34 @@
             alt="Viber"
             class="viber"
           />
-          <h4 class="header-container-contacts-number">+7(910) 684-90-53</h4>
+          <!-- Добавить aria-label -->
+          <p class="header-container-contacts-number">+7(910) 684-90-53</p>
         </div>
+        <!-- Сделать кнопку полностью кликалбельной -->
         <div class="header-container-details">
           <a href="#" class="text-16">Подробнее</a>
+          <!-- Написать alt -->
           <img src="public/Vector 19.svg" alt="" />
         </div>
       </div>
     </header>
     <img src="public/bg-image 1.png" alt="" class="header-container-image" />
+    <!-- Еблан? -->
     <main>
       <div class="main-container">
+        <!-- Сделать тег section -->
         <div class="preview">
           <h2 class="panton-h4">ул. Черкизова 14, Москва</h2>
+          <!-- <h1 class="hidden">Surf Train Co/h1>
+            ```.hidden{
+            display:none';
+            } ```
+            переделать семантику заголовков-->
           <h1>
             ПОКОРЯЙТЕ ВОЛНЫ <br />
             ВМЕСТЕ С НАМИ
           </h1>
+          <!-- br - не использовать пользоваться методами css добавить &nbsp; -->
           <p>
             SurfTrainCo предлагает вам доступное, <br />
             комплексное и приятное обучение серфингу <br />
@@ -118,6 +139,7 @@
           <div class="company-text">
             <h2>СЕРФИНГ</h2>
             <h2 class="panton-h2">это стиль жизни</h2>
+            <!-- Использлвать только 1 h2 с переносом и span для изменения куска текста -->
           </div>
           <div class="company-screen">
             <img
@@ -134,6 +156,7 @@
           <div class="company-block">
             <div class="company-block-about">
               <h3>SurfTrainCo —</h3>
+              <!-- Переделать в flex -->
               <p>
                 это компания по обучению серфингу, <br />
                 расположенная в Москве, которая <br />
@@ -164,6 +187,7 @@
               <div class="company-block-members-text">
                 <h3>2000+</h3>
                 <p>учеников</p>
+                <!-- Не делить логические конструкции -->
               </div>
             </div>
           </div>
@@ -185,6 +209,7 @@
           <div class="rewards-text">
             <h2>НАГРАДЫ</h2>
             <h2 class="panton-h2">нашего клуба</h2>
+            <!-- Не делить логические конструкции -->
           </div>
           <div class="rewards-photo">
             <div class="rewards-photo-background-border">
@@ -214,6 +239,7 @@
           <div class="programs-text">
             <h2>Программы</h2>
             <h2 class="panton-h2">обучения</h2>
+            <!-- Не делить логические конструкции -->
           </div>
           <div class="cards">
             <div class="easy-start">
@@ -225,6 +251,7 @@
                 />
                 <div class="easy-start-text">
                   <p>-тариф-</p>
+                  <!-- Использовать псевдо -->
                   <h3>Easy Start</h3>
                 </div>
                 <div class="easy-start-info">
@@ -350,6 +377,7 @@
             alt=""
             class="discounts-background-image"
           />
+          <!-- Фон переделать -->
           <div class="discounts-text">
             <h2>АКЦИИ</h2>
             <h2 class="panton-h2">и скидки</h2>
@@ -440,7 +468,9 @@
             <h2>ЗАПИСЬ</h2>
             <h2 class="panton-h2">на занятие</h2>
           </div>
+          <!-- Не делить логические конструкции -->
           <div class="order-block">
+            <!-- Переделать как форму-->
             <div class="order-block-form">
               <select name="" id="" class="order-block-form-table">
                 <option value="">Выберите дату</option>
@@ -481,6 +511,7 @@
             <div class="location-text">
               <h2>МЫ НА КАРТЕ</h2>
               <h2 class="panton-h2">где искать?</h2>
+              <!-- Не делить логические конструкции -->
             </div>
             <img src="public/МЕТКА.svg" alt="" class="location-address-svg" />
             <img
@@ -488,6 +519,7 @@
               alt=""
               class="location-address-background"
             />
+            <!-- Переделать на псевдо и bg-img-->
             <div class="location-address">
               <div class="location-address-social">
                 <p>Социальные сети:</p>
