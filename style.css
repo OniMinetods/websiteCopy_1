@@ -143,7 +143,7 @@ header {
   line-height: 110%;
 }
 
-/* Header */
+/*Header*/
 
 .header-container {
   display: flex;
@@ -199,13 +199,13 @@ header {
   color: white;
 }
 
-/*  Main  */
+/*Main*/
 
 .container {
   padding: 0;
 }
 
-/*  Preview */
+/*Preview*/
 
 .preview-block {
   background-image: url('public/bg-image-preview.png');
@@ -244,7 +244,7 @@ header {
   margin-bottom: 30rem;
 }
 
-/* Description */
+/*Description*/
 
 .description {
   display: flex;
@@ -281,7 +281,7 @@ header {
   color: var(--white);
 }
 
-/* Company */
+/*Company*/
 
 .company-block {
   color: white;
@@ -383,7 +383,7 @@ header {
   color: var(--base-blue);
 }
 
-/* Rewards */
+/*Rewards*/
 
 .rewards-block {
   padding: 0 20rem;
@@ -461,7 +461,7 @@ header {
   margin-bottom: 5rem;
 }
 
-/* Programs */
+/*Programs*/
 
 .programs-block {
   padding: 0 20rem;
@@ -589,7 +589,7 @@ header {
   left: 50%;
 }
 
-/* Discounts */
+/*Discounts*/
 
 .discounts-block {
   padding: 0 20rem;
@@ -664,7 +664,7 @@ header {
   margin-bottom: 240px;
 }
 
-/* Order (Form) */
+/*Order (Form)*/
 
 .order {
   position: relative;
@@ -737,6 +737,8 @@ header {
   padding-left: 20px;
 }
 
+/*Location*/
+
 .location {
   position: relative;
   display: flex;
@@ -805,6 +807,8 @@ header {
   align-items: center;
 }
 
+/*Footer*/
+
 .footer {
   padding-top: 50px;
   width: 100vw;
@@ -832,6 +836,8 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
+/*Media requests*/
 
 @media (max-width: 1900px) {
   .header-container__menu {
