@@ -143,6 +143,8 @@ header {
   line-height: 110%;
 }
 
+/* Header */
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -197,9 +199,13 @@ header {
   color: white;
 }
 
+/*  Main  */
+
 .container {
   padding: 0;
 }
+
+/*  Preview */
 
 .preview-block {
   background-image: url('public/bg-image-preview.png');
@@ -238,6 +244,8 @@ header {
   margin-bottom: 30rem;
 }
 
+/* Description */
+
 .description {
   display: flex;
   background: var(--light-blue);
@@ -272,6 +280,8 @@ header {
   background: var(--base-blue);
   color: var(--white);
 }
+
+/* Company */
 
 .company-block {
   color: white;
@@ -368,10 +378,12 @@ header {
 
 .comment__text {
   font-weight: 500;
-  font-size: clamp(25px, 2.5vw, 45px);
+  font-size: clamp(2.5rem, 2.5vw, 4.5rem);
   line-height: 140%;
   color: var(--base-blue);
 }
+
+/* Rewards */
 
 .rewards-block {
   padding: 0 20rem;
@@ -448,6 +460,8 @@ header {
   width: 50%;
   margin-bottom: 5rem;
 }
+
+/* Programs */
 
 .programs-block {
   padding: 0 20rem;
@@ -575,6 +589,8 @@ header {
   left: 50%;
 }
 
+/* Discounts */
+
 .discounts-block {
   padding: 0 20rem;
 }
@@ -647,6 +663,8 @@ header {
   color: var(--base-blue);
   margin-bottom: 240px;
 }
+
+/* Order (Form) */
 
 .order {
   position: relative;
