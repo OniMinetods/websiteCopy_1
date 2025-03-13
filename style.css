@@ -419,7 +419,7 @@ header {
 }
 
 .rewards__photo__background-border {
-  padding: 3rem;
+  padding: 3rem 10rem;
   background: var(--light-blue);
   border-radius: 6rem;
 }
@@ -830,6 +830,12 @@ header {
 .footer-copyright {
   display: flex;
   justify-content: space-around;
+}
+
+@media (max-width: 1900px) {
+  .header-container__menu {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
