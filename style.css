@@ -375,9 +375,7 @@ header {
 
 .rewards-block {
   padding: 0 20rem;
-}
-
-.rewards {
+  margin-bottom: 10rem;
 }
 
 .rewards__text {
