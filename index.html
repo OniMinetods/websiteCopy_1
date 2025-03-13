@@ -63,8 +63,8 @@
         <!-- Сделать тег section -->
         <section class="preview-block">
           <div class="preview">
-            <p class="preview-street custom-font">ул. Черкизова 14, Москва</p>
-            <h1 class="hidden">Surf Train Co</h1>
+            <p class="preview-street">ул. Черкизова 14, Москва</p>
+            <h1>Surf Train Co</h1>
             <p class="preview-slogan">
               ПОКОРЯЙТЕ&nbsp;ВОЛНЫ ВМЕСТЕ&nbsp;С&nbsp;НАМИ
             </p>
@@ -75,11 +75,11 @@
           </div>
         </section>
         <section class="description-block">
-          <div class="description-photo">
-            <div class="description-photo__item item">
+          <div class="description">
+            <div class="description__item">
               <img
                 src="public/description-1.png"
-                alt=""
+                alt="description-image"
                 class="description-photo-item-png"
               />
               <p class="item-head-text">Профессиональное руководство</p>
@@ -88,10 +88,10 @@
                 совершенствоваться.
               </p>
             </div>
-            <div class="description-photo__item item">
+            <div class="description__item">
               <img
                 src="public/description-2.png"
-                alt=""
+                alt="description-image"
                 class="description-photo-item-png"
               />
               <p class="item-head-text">Качественное оборудование</p>
@@ -100,10 +100,10 @@
                 получать удовольствие.
               </p>
             </div>
-            <div class="description-photo__item item">
+            <div class="description__item">
               <img
                 src="public/description-3.png"
-                alt=""
+                alt="description-image"
                 class="description-photo-item-png"
               />
 
@@ -113,10 +113,10 @@
                 схожим опытом и целями.
               </p>
             </div>
-            <div class="description-photo__item item">
+            <div class="description__item">
               <img
                 src="public/description-4.png"
-                alt=""
+                alt="description-image"
                 class="description-photo-item-png"
               />
               <p class="item-head-text">Дополнительные услуги</p>
@@ -127,449 +127,473 @@
             </div>
           </div>
         </section>
-        <section class="company">
+        <section class="company-block">
           <!-- <img
             src="public/Подложка вырез (1).png"
             alt=""
             class="company-background-image"
           /> -->
-          <div class="company-text">
-            <p class="head-text">СЕРФИНГ</p>
-            <span class="custom-text">это&nbsp;стиль&nbsp;жизни</span>
-            <!-- Использлвать только 1 h2 с переносом и span для изменения куска текста -->
-          </div>
-          <div class="company-info">
-            <div class="company-screen">
-              <img
-                src="/public/Картинка серфера.png"
-                alt="SurfTrainCo Screen"
-                class="company-surfer-photo"
-              />
-              <img
-                src="public/Лого (2).svg"
-                alt="logo"
-                class="company-surfer-overlay"
-              />
+          <div class="company">
+            <div class="company-text">
+              <p class="head-text">СЕРФИНГ</p>
+              <span class="custom-text">это&nbsp;стиль&nbsp;жизни</span>
+              <!-- Использлвать только 1 h2 с переносом и span для изменения куска текста -->
             </div>
-            <div class="company-block">
-              <div class="company-block-about">
-                <h3>SurfTrainCo —</h3>
-                <!-- Переделать в flex -->
-                <p>
-                  это компания по обучению серфингу, расположенная в Москве,
-                  которая открылась в 2018 году. Ее миссия состоит в том, чтобы
-                  обеспечить доступное, всестороннее и приятное обучение
-                  серфингу для всех уровней навыков и возрастов.
-                </p>
+            <div class="company-info">
+              <div class="company-screen">
+                <img
+                  src="/public/Картинка серфера.png"
+                  alt="SurfTrainCo Screen"
+                  class="company-surfer-photo"
+                />
+                <img
+                  src="public/Лого (2).svg"
+                  alt="logo"
+                  class="company-surfer-overlay"
+                />
               </div>
-              <div class="company-block-members">
-                <img
-                  src="public/Аватар 1.svg"
-                  alt="Аватар 1"
-                  class="company-block-members-svg"
-                />
-                <img
-                  src="public/Аватар 2.svg"
-                  alt="Аватар 2"
-                  class="company-block-members-svg"
-                />
-                <img
-                  src="public/Аватар 3.svg"
-                  alt="Аватар 3"
-                  class="company-block-members-svg"
-                />
-                <div class="company-block-members-text">
-                  <h3>2000+</h3>
-                  <p>учеников</p>
-                  <!-- Не делить логические конструкции -->
+              <div class="company-block">
+                <div class="company-block-about">
+                  <h3>SurfTrainCo —</h3>
+                  <!-- Переделать в flex -->
+                  <p>
+                    это компания по обучению серфингу, расположенная в Москве,
+                    которая открылась в 2018 году. Ее миссия состоит в том,
+                    чтобы обеспечить доступное, всестороннее и приятное обучение
+                    серфингу для всех уровней навыков и возрастов.
+                  </p>
+                </div>
+                <div class="company-block-members">
+                  <img
+                    src="public/Аватар 1.svg"
+                    alt="Аватар 1"
+                    class="company-block-members-svg"
+                  />
+                  <img
+                    src="public/Аватар 2.svg"
+                    alt="Аватар 2"
+                    class="company-block-members-svg"
+                  />
+                  <img
+                    src="public/Аватар 3.svg"
+                    alt="Аватар 3"
+                    class="company-block-members-svg"
+                  />
+                  <div class="company-block-members-text">
+                    <h3>2000+</h3>
+                    <p>учеников</p>
+                    <!-- Не делить логические конструкции -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <p class="comment-text">
+              Не бойтесь испытать себя и свои возможности - поддайтесь волнам и
+              пусть они помогут вам раскрыть свой истинный потенциал.
+              Погрузитесь в мир серфинга и почувствуйте, как ваша жизнь
+              наполняется яркими эмоциями и волнующими приключениями. Погнали
+              волну!
+            </p>
+          </div>
+        </section>
+        <section class="rewards-block">
+          <div class="rewards">
+            <!-- <img
+            src="public/Подложка вырез (1).png"
+            alt=""
+            class="rewards-background-image"
+          /> -->
+            <div class="rewards__text">
+              <h2>НАГРАДЫ</h2>
+              <h2 class="panton-h2">нашего клуба</h2>
+              <!-- Не делить логические конструкции -->
+            </div>
+            <div class="rewards__photo">
+              <div class="rewards__photo__background-border">
+                <div class="rewards__photo__background">
+                  <img
+                    src="public/Картинка.png"
+                    alt="rewards-image"
+                    class="rewards__photo__image"
+                  />
+                  <div class="text">
+                    <p>Награда</p>
+                    <p>«Лучший инструктор по серфингу 2022»</p>
+                    <p>
+                      от международной организации Surfers Against Sewage (SAS)
+                    </p>
+                    <p>(2022)</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div class="comment">
-          <p class="comment-text">
-            Не бойтесь испытать себя и свои возможности - поддайтесь волнам и
-            пусть они помогут вам раскрыть свой истинный потенциал. Погрузитесь
-            в мир серфинга и почувствуйте, как ваша жизнь наполняется яркими
-            эмоциями и волнующими приключениями. Погнали волну!
-          </p>
-        </div>
-        <div class="rewards">
-          <!-- <img
-            src="public/Подложка вырез (1).png"
-            alt=""
-            class="rewards-background-image"
-          /> -->
-          <div class="rewards-text">
-            <h2>НАГРАДЫ</h2>
-            <h2 class="panton-h2">нашего клуба</h2>
-            <!-- Не делить логические конструкции -->
-          </div>
-          <div class="rewards-photo">
-            <div class="rewards-photo-background-border">
-              <div class="rewards-photo-background">
-                <img
-                  src="public/Картинка.png"
-                  alt="reward png"
-                  class="rewards-photo-png"
-                />
-                <div class="rewards-photo-text">
-                  <p class="text-16">Награда</p>
-                  <h3>«Лучший инструктор по серфингу 2022»</h3>
-                  <p>
-                    от международной организации Surfers Against Sewage (SAS)
-                  </p>
-                  <p>(2022)</p>
+        <section class="programs-block">
+          <div class="programs">
+            <div class="programs__text">
+              <p>Программы</p>
+              <p>обучения</p>
+              <!-- Не делить логические конструкции -->
+            </div>
+            <div class="programs__card">
+              <div class="easy-start">
+                <div class="easy-start__border">
+                  <img
+                    src="public/Иконка1.svg"
+                    alt="icon-1"
+                    class="easy-start__border-image"
+                  />
+                  <div class="easy-start__border__text">
+                    <p>-тариф-</p>
+                    <!-- Использовать псевдо -->
+                    <h3>Easy Start</h3>
+                  </div>
+                  <div class="easy-start__info info">
+                    <div class="easy-start__info__course course">
+                      <img src="public/icon1.svg" alt="Календарь" />
+                      <div class="easy-start__info__course__text text">
+                        <p>длительность курса</p>
+                        <p>5 уроков</p>
+                      </div>
+                    </div>
+                    <div class="easy-start__info__lesson lesson">
+                      <img src="public/icon2.svg" alt="Секундомер" />
+                      <div class="easy-start__info__lesson__text text">
+                        <p>длительность урока</p>
+                        <p>45 минут</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="easy-start__description">
+                    <div class="easy-start__description__mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>Воссозданный искуственный речной порог</p>
+                    </div>
+                    <div class="easy-start-description-mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>Доска с плавниками, как на океане</p>
+                    </div>
+                    <div class="easy-start-description-mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>
+                        Даёт возможность отработать технику поворотов, трюки на
+                        волне, развить баланс и мышечную память
+                      </p>
+                    </div>
+                    <div class="easy-start__description__mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>
+                        Помогает подготовиться к катанию на океанских волнах
+                        (работа тела после поп-ап)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="easy-start__price">
+                    <p class="easy-start__price-old">29 000 руб.</p>
+                    <p class="easy-start__price-new">12 990 руб.</p>
+                  </div>
+                  <button name="choose-tarif" class="easy-start__button">
+                    Выбрать тариф
+                  </button>
+                </div>
+              </div>
+              <div class="flow-rider">
+                <div class="flow-rider__border">
+                  <img
+                    src="public/Иконка2.svg"
+                    alt="icon-1"
+                    class="flow-rider__border-image"
+                  />
+                  <div class="flow-rider__text">
+                    <p>-тариф-</p>
+                    <p>Flow Rider</p>
+                  </div>
+                  <div class="flow-rider__info">
+                    <div class="flow-rider__info__course course">
+                      <img src="public/icon1.svg" alt="Календарь" />
+                      <div class="flow-rider__info__course__text text">
+                        <p>длительность курса</p>
+                        <p>5 уроков</p>
+                      </div>
+                    </div>
+                    <div class="flow-rider__info__lesson lesson">
+                      <img src="public/icon2.svg" alt="Секундомер" />
+                      <div class="flow-rider__info__lesson__text text">
+                        <p>длительность урока</p>
+                        <p>45 минут</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flow-rider__description">
+                    <div class="flow-rider__description__mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>
+                        Напор воды, направленный вверх по натянутой тканевой
+                        поверхности
+                      </p>
+                    </div>
+                    <div class="flow-rider__description__mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>
+                        Доска без плавников, нечто среднее между скейтбордом и
+                        сноубордом
+                      </p>
+                    </div>
+                    <div class="flow-rider__description__mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>
+                        Даёт возможность развить баланс и получить яркие эмоции
+                        от катания на волне
+                      </p>
+                    </div>
+                    <div class="flow-rider__description__mark">
+                      <img src="public/Иконка-галочка.svg" alt="Галочка" />
+                      <p>
+                        Возможность поймать удовольствие от движения и
+                        маневрирования на доске по водному потоку
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flow-rider__price">
+                    <p class="flow-rider__price-old">22 000 руб.</p>
+                    <p class="flow-rider__price-new">10 990 руб.</p>
+                  </div>
+                  <button name="choose-tarif" class="flow-rider__button">
+                    Выбрать тариф
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="programs">
-          <div class="programs-text">
-            <h2>Программы</h2>
-            <h2 class="panton-h2">обучения</h2>
-            <!-- Не делить логические конструкции -->
-          </div>
-          <div class="cards">
-            <div class="easy-start">
-              <div class="easy-start-border">
-                <img
-                  src="public/Иконка1.svg"
-                  alt="icon-1"
-                  class="easy-start-border-svg"
-                />
-                <div class="easy-start-text">
-                  <p>-тариф-</p>
-                  <!-- Использовать псевдо -->
-                  <h3>Easy Start</h3>
-                </div>
-                <div class="easy-start-info">
-                  <div class="easy-start-info-course">
-                    <img src="public/icon1.svg" alt="" />
-                    <div class="easy-start-info-course-text">
-                      <p class="text-16">длительность курса</p>
-                      <p class="text-20">5 уроков</p>
-                    </div>
-                  </div>
-                  <div class="easy-start-info-lesson">
-                    <img src="public/icon2.svg" alt="" />
-                    <div class="easy-start-info-lesson-text">
-                      <p class="text-16">длительность урока</p>
-                      <p class="text-20">45 минут</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="easy-start-description">
-                  <div class="easy-start-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>Воссозданный искуственный речной порог</p>
-                  </div>
-                  <div class="easy-start-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>Доска с плавниками, как на океане</p>
-                  </div>
-                  <div class="easy-start-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>
-                      Даёт возможность отработать технику поворотов, трюки на
-                      волне, развить баланс и мышечную память
-                    </p>
-                  </div>
-                  <div class="easy-start-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>
-                      Помогает подготовиться к катанию на океанских волнах
-                      (работа тела после поп-ап)
-                    </p>
-                  </div>
-                </div>
-                <div class="easy-start-price">
-                  <p class="easy-start-price-old">29 000 руб.</p>
-                  <p class="easy-start-price-new">12 990 руб.</p>
-                </div>
-                <button name="Choose" class="easy-start-button">
-                  Выбрать тариф
-                </button>
-              </div>
-            </div>
-            <div class="flow-rider">
-              <div class="flow-rider-border">
-                <img
-                  src="public/Иконка2.svg"
-                  alt="icon-1"
-                  class="flow-rider-border-svg"
-                />
-                <div class="flow-rider-text">
-                  <p>-тариф-</p>
-                  <h3>Flow Rider</h3>
-                </div>
-                <div class="flow-rider-info">
-                  <div class="flow-rider-info-course">
-                    <img src="public/icon1.svg" alt="" />
-                    <div class="flow-rider-info-course-text">
-                      <p class="text-16">длительность курса</p>
-                      <p class="text-20">5 уроков</p>
-                    </div>
-                  </div>
-                  <div class="flow-rider-info-lesson">
-                    <img src="public/icon2.svg" alt="" />
-                    <div class="lesson-text">
-                      <p class="text-16">длительность урока</p>
-                      <p class="text-20">45 минут</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="flow-rider-description">
-                  <div class="flow-rider-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>
-                      Напор воды, направленный вверх по натянутой тканевой
-                      поверхности
-                    </p>
-                  </div>
-                  <div class="flow-rider-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>
-                      Доска без плавников, нечто среднее между скейтбордом и
-                      сноубордом
-                    </p>
-                  </div>
-                  <div class="flow-rider-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>
-                      Даёт возможность развить баланс и получить яркие эмоции от
-                      катания на волне
-                    </p>
-                  </div>
-                  <div class="flow-rider-description-mark">
-                    <img src="public/Иконка-галочка.svg" alt="" />
-                    <p>
-                      Возможность поймать удовольствие от движения и
-                      маневрирования на доске по водному потоку
-                    </p>
-                  </div>
-                </div>
-                <div class="flow-rider-price">
-                  <p class="flow-rider-price-old">22 000 руб.</p>
-                  <p class="flow-rider-price-new">10 990 руб.</p>
-                </div>
-                <button name="Choose" class="flow-rider-button">
-                  Выбрать тариф
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="discounts">
-          <!-- <img
+        </section>
+        <section class="discounts-block">
+          <div class="discounts">
+            <!-- <img
             src="public/Подложка вырез.png"
             alt=""
             class="discounts-background-image"
           /> -->
-          <!-- Фон переделать -->
-          <div class="discounts-text">
-            <h2>АКЦИИ</h2>
-            <h2 class="panton-h2">и скидки</h2>
+            <!-- Фон переделать -->
+            <div class="discounts__text">
+              <p>АКЦИИ</p>
+              <p>и скидки</p>
+            </div>
+            <div class="discounts__photos photos">
+              <div class="discounts__photos__card card">
+                <img
+                  src="public/content1.png"
+                  alt="Картинка-1"
+                  class="discounts__photos__card-image"
+                />
+                <div class="discounts__photos__card__text-up text-up">
+                  <p>До 25.04.2024</p>
+                </div>
+                <div class="discounts__photos__card__text-down text-down">
+                  <p>Бесплатный урок серфинга для первого посещения</p>
+                </div>
+                <img
+                  src="public/goto.svg"
+                  alt="goto"
+                  class="discounts__photos__card__text-image"
+                />
+              </div>
+              <div class="discounts__photos__card card">
+                <img
+                  src="public/content2.png"
+                  alt="Картинка-2"
+                  class="discounts__photos__card-image"
+                />
+                <div class="discounts__photos__card__text-up text-up">
+                  <p>Бессрочно</p>
+                </div>
+                <div class="discounts__photos__card__text-down text-down">
+                  <p>Сертификация или аттестация по окончании курса</p>
+                </div>
+                <img
+                  src="public/goto.svg"
+                  alt="goto"
+                  class="discounts__photos__card__text-image"
+                />
+              </div>
+              <div class="discounts__photos__card card">
+                <img
+                  src="public/content3.png"
+                  alt="Картинка-3"
+                  class="discounts__photos__card-image"
+                />
+                <div class="discounts__photos__card__text-up text-up">
+                  <p>До 12.05.2024</p>
+                </div>
+                <img
+                  src="public/goto.svg"
+                  alt="goto"
+                  class="discounts__photos__card__text-image"
+                />
+                <div class="discounts__photos__card__text-down text-down">
+                  <p>Пакет серфинга для двоих</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="discounts-photos">
-            <div class="discounts-photos-card">
-              <img
-                src="public/content1.png"
-                alt=""
-                class="discounts-photos-card-png"
-              />
-              <div class="discounts-photos-card-text-up">
-                <p class="text-16">До 25.04.2024</p>
-              </div>
-              <div class="discounts-photos-card-text-down">
-                <p>Бесплатный урок серфинга для первого посещения</p>
-              </div>
-              <img
-                src="public/Vector 19.svg"
-                alt=""
-                class="discounts-photos-card-text-svg"
-              />
-            </div>
-            <div class="discounts-photos-card">
-              <img
-                src="public/content2.png"
-                alt=""
-                class="discounts-photos-card-png"
-              />
-              <div class="discounts-photos-card-text-up">
-                <p class="text-16">Бессрочно</p>
-              </div>
-              <div class="discounts-photos-card-text-down">
-                <p>Сертификация или аттестация по окончании курса</p>
-              </div>
-              <img
-                src="public/Vector 19.svg"
-                alt=""
-                class="discounts-photos-card-text-svg"
-              />
-            </div>
-            <div class="discounts-photos-card">
-              <img
-                src="public/content3.png"
-                alt=""
-                class="discounts-photos-card-png"
-              />
-              <div class=""></div>
-              <div class="discounts-photos-card-text-up">
-                <p class="text-16">До 12.05.2024</p>
-              </div>
-              <img
-                src="public/Vector 19.svg"
-                alt=""
-                class="discounts-photos-card-text-svg"
-              />
-              <div class="discounts-photos-card-text-down">
-                <p>Пакет серфинга для двоих</p>
-              </div>
-            </div>
+          <div class="comment">
+            <p class="comment-text">
+              Помните, что каждый ваш выход на доску - это возможность выйти за
+              пределы своих комфортных зон и стать лучше, сильнее и увереннее.
+              Поверьте в себя, стремитесь к новым вершинам и не забывайте
+              наслаждаться каждым мгновением на доске.
+            </p>
           </div>
-        </div>
-        <div class="comment">
-          <p class="comment-text">
-            Помните, что каждый ваш выход на доску - это возможность выйти за
-            пределы своих комфортных зон и стать лучше, сильнее и увереннее.
-            Поверьте в себя, стремитесь к новым вершинам и не забывайте
-            наслаждаться каждым мгновением на доске.
-          </p>
-        </div>
-        <div class="order">
-          <!-- <img
+        </section>
+        <section class="order-block">
+          <div class="order">
+            <!-- <img
             src="public/Подложка вырез (2).png"
             alt=""
             class="order-background-image"
           /> -->
-          <div class="order-text">
-            <h2>ЗАПИСЬ</h2>
-            <h2 class="panton-h2">на занятие</h2>
-          </div>
-          <!-- Не делить логические конструкции -->
-          <div class="order-block">
-            <!-- Переделать как форму-->
-            <div class="order-block-form">
-              <select name="" id="" class="order-block-form-table">
-                <option value="">Выберите дату</option>
-              </select>
-              <select name="" id="" class="order-block-form-table">
-                <option value="">Выберите время</option>
-              </select>
-              <select
-                name=""
-                id=""
-                class="order-block-form-table-tarif order-block-form-table"
-              >
-                <option value="">Выберите подходящий тариф</option>
-              </select>
-              <input
-                type="text"
-                class="order-block-text"
-                placeholder="Иванов Иван"
-              />
-              <input
-                type="text"
-                class="order-block-text"
-                placeholder="8(999) 999-99-99"
-              />
-              <button class="order-block order-block-button">
-                Записаться онлайн
-              </button>
-              <p>
-                Нажимая на кнопку, вы соглашаетесь
-                <a href="#">с политикой обработки данных</a>
-              </p>
+            <div class="order__text">
+              <p>ЗАПИСЬ</p>
+              <p>на занятие</p>
             </div>
-            <img src="public/image 3 1.png" alt="" class="order-block-photo" />
-          </div>
-        </div>
-        <div class="location">
-          <div class="location-address-map">
-            <div class="location-text">
-              <h2>МЫ НА КАРТЕ</h2>
-              <h2 class="panton-h2">где искать?</h2>
-              <!-- Не делить логические конструкции -->
-            </div>
-            <img src="public/МЕТКА.svg" alt="" class="location-address-svg" />
-            <img
-              src="public/address.png"
-              alt=""
-              class="location-address-background"
-            />
-            <!-- Переделать на псевдо и bg-img-->
-            <div class="location-address">
-              <div class="location-address-social">
-                <p>Социальные сети:</p>
-                <div class="location-address-social-svg">
-                  <img src="public/Инст.svg" alt="" class="instagram" />
-                  <img src="public/Тик ток.svg" alt="" class="tik-tok" />
-                  <img src="public/Вконтакте.svg" alt="" class="vkontakte" />
-                </div>
-              </div>
-              <div class="location-address-contacts">
-                <p>+7 (910) 684-90-53</p>
-                <div class="location-address-contacts-svg">
-                  <img
-                    src="public/Телеграм.svg"
-                    alt="Telegram"
-                    class="telegram"
-                  />
-                  <img
-                    src="public/Ватсап.svg"
-                    alt="WhatsApp"
-                    class="whatsapp"
-                  />
-                  <img src="public/Вайбер.svg" alt="Viber" class="viber" />
-                </div>
+            <!-- Не делить логические конструкции -->
+            <form class="order__form form">
+              <!-- Переделать как форму-->
+              <div class="order__form__block block">
+                <select name="" id="" class="order__form__block__table table">
+                  <option value="">Выберите дату</option>
+                </select>
+                <select name="" id="" class="order__form__block__table table">
+                  <option value="">Выберите время</option>
+                </select>
+                <select
+                  name=""
+                  id=""
+                  class="order__form__block__table__tarif order__form__block__table"
+                >
+                  <option value="">Выберите подходящий тариф</option>
+                </select>
+                <input
+                  type="text"
+                  class="order__form__text text"
+                  placeholder="Иванов Иван"
+                />
+                <input
+                  type="text"
+                  class="order__form__text text"
+                  placeholder="8(999) 999-99-99"
+                />
+                <button class="order__form order__form__button">
+                  Записаться онлайн
+                </button>
+                <p>
+                  Нажимая на кнопку, вы соглашаетесь
+                  <a href="#">с политикой обработки данных</a>
+                </p>
               </div>
               <img
-                src="public/Кнопка онлайн-запись.png"
+                src="public/image 3 1.png"
                 alt=""
-                class="online-svg"
+                class="order__form__photo"
               />
-              <div class="location-address-tag">
-                <img
-                  src="public/Location.png"
-                  alt=""
-                  class="location-address-tag-image"
-                />
-                <p>ул. Черкизова 14, Москва</p>
+            </form>
+          </div>
+        </section>
+        <section class="location-block">
+          <div class="location">
+            <div class="location__address address">
+              <div class="location__text text">
+                <p>МЫ НА КАРТЕ</p>
+                <p>где искать?</p>
+                <!-- Не делить логические конструкции -->
               </div>
+              <img
+                src="public/МЕТКА.svg"
+                alt="Метка"
+                class="location__address__point"
+              />
+              <img
+                src="public/address.png"
+                alt="address-image"
+                class="location__address__background background"
+              />
+              <!-- Переделать на псевдо и bg-img-->
+              <div class="location__address">
+                <div class="location__address__social social">
+                  <p>Социальные сети:</p>
+                  <div class="location__address__social__image image">
+                    <img src="public/Инст.svg" alt="" class="instagram" />
+                    <img src="public/Тик ток.svg" alt="" class="tik-tok" />
+                    <img src="public/Вконтакте.svg" alt="" class="vkontakte" />
+                  </div>
+                </div>
+                <div class="location__address__contacts contacts">
+                  <p>+7 (910) 684-90-53</p>
+                  <div class="location__address__contacts__image image">
+                    <img
+                      src="public/Телеграм.svg"
+                      alt="Telegram"
+                      class="telegram"
+                    />
+                    <img
+                      src="public/Ватсап.svg"
+                      alt="WhatsApp"
+                      class="whatsapp"
+                    />
+                    <img src="public/Вайбер.svg" alt="Viber" class="viber" />
+                  </div>
+                </div>
+                <img
+                  src="public/Кнопка онлайн-запись.png"
+                  alt=""
+                  class="location__address__online-image online-image"
+                />
+                <div class="location__address__tag tag">
+                  <img
+                    src="public/Location.png"
+                    alt=""
+                    class="location__address__tag__image image"
+                  />
+                  <p>ул. Черкизова 14, Москва</p>
+                </div>
 
-              <div class="location-address-bus">
-                <h4>Как добраться?</h4>
-                <p>Маршруты: 139, 28б</p>
+                <div class="location__address__bus">
+                  <p>Как добраться?</p>
+                  <p>Маршруты: 139, 28б</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
     <footer>
-      <div class="footer">
-        <div class="footer-common">
-          <div class="footer-way">
-            <img src="public/Лого (1).svg" alt="" class="footer-way-logo" />
+      <div class="footer-block">
+        <div class="footer__common">
+          <div class="footer__common__way way">
+            <img
+              src="public/Лого (1).svg"
+              alt=""
+              class="footer__common__way__logo logo"
+            />
             <p>Свяжитесь с нами любым удобным способом</p>
-            <div class="footer-contacts-svg">
+            <div class="footer__common__way__contacts-image contacts-image">
               <img src="public/Телеграм.svg" alt="Telegram" class="telegram" />
               <img src="public/Ватсап.svg" alt="WhatsApp" class="whatsapp" />
               <img src="public/Вайбер.svg" alt="Viber" class="viber" />
             </div>
           </div>
-          <div class="footer-contacts">
-            <h4>Контакты</h4>
+          <div class="footer__common__contacts contacts">
+            <p>Контакты</p>
             <p>+7 (910) 684-90-53</p>
             <p>SurfCocommerce@yandex.ru</p>
             <p>г. Москва, ул. Черкизова 14</p>
             <p>Работаем с 8:00-22:00</p>
           </div>
-          <div class="footer-client">
-            <h4>Для клиентов</h4>
+          <div class="footer__common__client client">
+            <p>Для клиентов</p>
             <p>О нас</p>
             <p>Награды</p>
             <p>Тарифы</p>
@@ -577,7 +601,7 @@
             <p>Контакты</p>
           </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer__common_copyright copyright">
           <p>(с) SurfTrainCo, 2023</p>
           <p>Политика конфеденциальности</p>
           <p>Публичная оферта</p>

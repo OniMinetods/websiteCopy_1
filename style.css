@@ -180,13 +180,6 @@ header {
   color: white;
 }
 
-.custom-font {
-  font-family: 'Panton';
-  color: var(--red);
-  line-height: 1.5rem;
-  text-align: left;
-}
-
 .preview-block {
   background-image: url('public/bg-image-preview.png');
   background-size: 100vw;
@@ -204,6 +197,10 @@ header {
 }
 
 .preview-street {
+  font-family: 'Panton';
+  color: var(--red);
+  line-height: 1.5rem;
+  text-align: left;
   margin-bottom: 2rem;
 }
 
@@ -224,7 +221,7 @@ header {
   margin-bottom: 30rem;
 }
 
-.description-photo {
+.description {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -245,19 +242,19 @@ header {
   font-weight: 400;
 }
 
-.description-photo__item:nth-child(2n + 1) {
+.description__item:nth-child(2n + 1) {
   background: var(--base-blue);
   color: var(--white);
 }
 
-.description-photo__item {
+.description__item {
   border-radius: 3rem;
   background: white;
   padding: 2rem;
   color: var(--base-blue);
 }
 
-.description-photo__item img {
+.description__item img {
   display: block;
   width: 100%;
   box-sizing: border-box;
