@@ -63,12 +63,12 @@
         <!-- Сделать тег section -->
         <section class="preview-block">
           <div class="preview">
-            <p class="preview-street">ул. Черкизова 14, Москва</p>
+            <p class="preview__street">ул. Черкизова 14, Москва</p>
             <h1>Surf Train Co</h1>
-            <p class="preview-slogan">
+            <p class="preview__slogan">
               ПОКОРЯЙТЕ&nbsp;ВОЛНЫ ВМЕСТЕ&nbsp;С&nbsp;НАМИ
             </p>
-            <p class="preview-desc">
+            <p class="preview__desc">
               SurfTrainCo предлагает вам доступное, комплексное и приятное
               обучение серфингу для&nbsp;всех уровней навыков и возрастов
             </p>
@@ -80,10 +80,12 @@
               <img
                 src="public/description-1.png"
                 alt="description-image"
-                class="description-photo-item-png"
+                class="description__item__image"
               />
-              <p class="item-head-text">Профессиональное руководство</p>
-              <p class="item-main-text">
+              <p class="description__item__head-text head-text">
+                Профессиональное руководство
+              </p>
+              <p class="description__item__main-text main-text">
                 опытные инструкторы помогут вам освоить основы и быстро
                 совершенствоваться.
               </p>
@@ -92,10 +94,12 @@
               <img
                 src="public/description-2.png"
                 alt="description-image"
-                class="description-photo-item-png"
+                class="description__item__image"
               />
-              <p class="item-head-text">Качественное оборудование</p>
-              <p class="item-main-text">
+              <p class="description__item__head-text head-text">
+                Качественное оборудование
+              </p>
+              <p class="description__item__main-text main-text">
                 доски и гидрокостюмы помогут вам оставаться в безопасности и
                 получать удовольствие.
               </p>
@@ -104,11 +108,13 @@
               <img
                 src="public/description-3.png"
                 alt="description-image"
-                class="description-photo-item-png"
+                class="description__item__image"
               />
 
-              <p class="item-head-text">Благоприятная обстановка</p>
-              <p class="item-main-text">
+              <p class="description__item__head-text head-text">
+                Благоприятная обстановка
+              </p>
+              <p class="description__item__main-text main-text">
                 благоприятная и безопасная обстановка в обучении с людьми со
                 схожим опытом и целями.
               </p>
@@ -117,10 +123,12 @@
               <img
                 src="public/description-4.png"
                 alt="description-image"
-                class="description-photo-item-png"
+                class="description__item__image"
               />
-              <p class="item-head-text">Дополнительные услуги</p>
-              <p class="item-main-text">
+              <p class="description__item__head-text head-text">
+                Дополнительные услуги
+              </p>
+              <p class="description__item__main-text main-text">
                 услуги фотографий и видео помогут вам запечатлить и поделиться
                 опытом серфинга.
               </p>
@@ -134,62 +142,60 @@
             class="company-background-image"
           /> -->
           <div class="company">
-            <div class="company-text">
+            <div class="company__text text">
               <p class="head-text">СЕРФИНГ</p>
-              <span class="custom-text">это&nbsp;стиль&nbsp;жизни</span>
+              <span class="sup-text">это&nbsp;стиль&nbsp;жизни</span>
               <!-- Использлвать только 1 h2 с переносом и span для изменения куска текста -->
             </div>
-            <div class="company-info">
-              <div class="company-screen">
-                <img
-                  src="/public/Картинка серфера.png"
-                  alt="SurfTrainCo Screen"
-                  class="company-surfer-photo"
-                />
+            <ul class="company__info info">
+              <li class="company__info__screen screen">
                 <img
                   src="public/Лого (2).svg"
                   alt="logo"
-                  class="company-surfer-overlay"
+                  class="company__info__screen__logo logo"
                 />
-              </div>
-              <div class="company-block">
-                <div class="company-block-about">
-                  <h3>SurfTrainCo —</h3>
+              </li>
+              <ul class="company__info__block block">
+                <li class="company__info__block__about about">
+                  <p>SurfTrainCo —</p>
                   <!-- Переделать в flex -->
                   <p>
                     это компания по обучению серфингу, расположенная в Москве,
-                    которая открылась в 2018 году. Ее миссия состоит в том,
-                    чтобы обеспечить доступное, всестороннее и приятное обучение
-                    серфингу для всех уровней навыков и возрастов.
+                    которая открылась в 2018 году.
                   </p>
-                </div>
-                <div class="company-block-members">
+                  <p>
+                    Ее миссия состоит в том, чтобы обеспечить доступное,
+                    всестороннее и приятное обучение серфингу для всех уровней
+                    навыков и возрастов.
+                  </p>
+                </li>
+                <li class="company__info__block__members members">
                   <img
-                    src="public/Аватар 1.svg"
-                    alt="Аватар 1"
-                    class="company-block-members-svg"
+                    src="public/avatar-1.svg"
+                    alt="Аватар-1"
+                    class="company__info__block__members__avatar avatar"
                   />
                   <img
-                    src="public/Аватар 2.svg"
-                    alt="Аватар 2"
-                    class="company-block-members-svg"
+                    src="public/avatar-2.svg"
+                    alt="Аватар-2"
+                    class="company__info__block__members__avatar avatar"
                   />
                   <img
-                    src="public/Аватар 3.svg"
-                    alt="Аватар 3"
-                    class="company-block-members-svg"
+                    src="public/avatar-3.svg"
+                    alt="Аватар-3"
+                    class="company__info__block__members__avatar avatar"
                   />
-                  <div class="company-block-members-text">
-                    <h3>2000+</h3>
+                  <div class="company__info__block__members__text text">
+                    <p>2000+</p>
                     <p>учеников</p>
                     <!-- Не делить логические конструкции -->
                   </div>
-                </div>
-              </div>
-            </div>
+                </li>
+              </ul>
+            </ul>
           </div>
           <div class="comment">
-            <p class="comment-text">
+            <p class="comment__text text">
               Не бойтесь испытать себя и свои возможности - поддайтесь волнам и
               пусть они помогут вам раскрыть свой истинный потенциал.
               Погрузитесь в мир серфинга и почувствуйте, как ваша жизнь
@@ -206,8 +212,8 @@
             class="rewards-background-image"
           /> -->
             <div class="rewards__text">
-              <h2>НАГРАДЫ</h2>
-              <h2 class="panton-h2">нашего клуба</h2>
+              <p>НАГРАДЫ</p>
+              <p>нашего клуба</p>
               <!-- Не делить логические конструкции -->
             </div>
             <div class="rewards__photo">
@@ -216,9 +222,9 @@
                   <img
                     src="public/Картинка.png"
                     alt="rewards-image"
-                    class="rewards__photo__image"
+                    class="rewards__photo__image image"
                   />
-                  <div class="text">
+                  <div class="rewards__photo__background__text text">
                     <p>Награда</p>
                     <p>«Лучший инструктор по серфингу 2022»</p>
                     <p>
@@ -249,7 +255,7 @@
                   <div class="easy-start__border__text">
                     <p>-тариф-</p>
                     <!-- Использовать псевдо -->
-                    <h3>Easy Start</h3>
+                    <p>Easy Start</p>
                   </div>
                   <div class="easy-start__info info">
                     <div class="easy-start__info__course course">
