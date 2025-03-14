@@ -205,18 +205,19 @@ header {
   padding: 0;
 }
 
-/*Preview*/
-
-.preview-block {
+.background-image {
   background-image: url('public/bg-image-preview.png');
   background-size: 100vw;
   background-repeat: no-repeat;
 }
 
+/*Preview*/
+
 .preview {
   text-align: left;
   padding: 16rem 20rem 12rem 20rem;
   color: var(--base-blue);
+  margin-bottom: 5rem;
 }
 
 .preview__street {
@@ -239,12 +240,12 @@ header {
   width: 30%;
 }
 
+/*Description*/
+
 .description-block {
   padding: 0 18rem;
-  margin-bottom: 30rem;
+  margin-bottom: 15rem;
 }
-
-/*Description*/
 
 .description {
   display: flex;
@@ -278,15 +279,19 @@ header {
 
 .description__item:nth-child(2n + 1) {
   background: var(--base-blue);
-  color: var(--white);
+  color: white;
 }
 
 /*Company*/
 
 .company-block {
   color: white;
-  margin-bottom: 30rem;
-  padding: 0 20rem;
+  padding: 10rem 20rem;
+  background-image: url('public/background-white-surfing.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vw;
+  margin-bottom: 10rem;
 }
 
 .company__text {
@@ -379,24 +384,31 @@ header {
   line-height: 100%;
 }
 
-.comment__text {
+.comment {
+  padding: 0 20rem;
   font-weight: 500;
   font-size: clamp(2.5rem, 2.5vw, 4.5rem);
   line-height: 140%;
   color: var(--base-blue);
+  margin-bottom: 10rem;
 }
 
 /*Rewards*/
 
 .rewards-block {
-  padding: 0 20rem;
-  margin-bottom: 10rem;
+  padding: 10rem 20rem;
+  margin-bottom: 20rem;
+  background-image: url('public/background-white-rewards.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vw;
 }
 
 .rewards__text {
   color: var(--base-blue);
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5rem;
 }
 
 .rewards__text .head {
@@ -434,7 +446,7 @@ header {
 }
 
 .rewards__photo__background-border {
-  padding: 3rem 10rem;
+  padding: 3rem;
   background: var(--light-blue);
   border-radius: 6rem;
 }
@@ -595,13 +607,17 @@ header {
 /*Discounts*/
 
 .discounts-block {
-  padding: 0 20rem;
+  padding: 15rem 20rem;
+  background-image: url('public/background-white-discounts.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vw;
+  margin-bottom: 10rem;
 }
 
 .discounts {
   position: relative;
   overflow: visible;
-  margin-bottom: 20rem;
   color: white;
 }
 
@@ -657,19 +673,13 @@ header {
   padding: 3rem;
 }
 
-.comment {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  font-size: 4.5rem;
-  font-weight: 500;
-  color: var(--base-blue);
-  margin-bottom: 24rem;
-}
-
 /*Order (Form)*/
 .order-block {
-  padding: 0 20rem;
+  padding: 10rem 20rem;
+  background-image: url('public/background-white-surfing.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vw;
   margin-bottom: 20rem;
 }
 
