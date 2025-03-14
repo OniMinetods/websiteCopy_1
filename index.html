@@ -476,8 +476,8 @@
             class="order-background-image"
           /> -->
             <div class="order__text">
-              <p>ЗАПИСЬ</p>
-              <p>на занятие</p>
+              <p class="head-text">ЗАПИСЬ</p>
+              <p class="sup-text">на занятие</p>
             </div>
             <!-- Не делить логические конструкции -->
             <form class="order__form form">
@@ -506,9 +506,7 @@
                   class="order__form__text text"
                   placeholder="8(999) 999-99-99"
                 />
-                <button class="order__form order__form__button">
-                  Записаться онлайн
-                </button>
+                <button class="order__form__button">Записаться онлайн</button>
                 <p>
                   Нажимая на кнопку, вы соглашаетесь
                   <a href="#">с политикой обработки данных</a>
@@ -524,66 +522,55 @@
         </section>
         <section class="location-block">
           <div class="location">
-            <div class="location__address address">
-              <div class="location__text text">
-                <p>МЫ НА КАРТЕ</p>
-                <p>где искать?</p>
-                <!-- Не делить логические конструкции -->
+            <div class="location__text text">
+              <p class="head-text">МЫ НА КАРТЕ</p>
+              <p class="sup-text">где искать?</p>
+              <!-- Не делить логические конструкции -->
+            </div>
+            <img src="public/МЕТКА.svg" alt="Метка" class="location__point" />
+            <!-- Переделать на псевдо и bg-img-->
+            <div class="location__address">
+              <div class="location__address__social social">
+                <p>Социальные сети:</p>
+                <div class="location__address__social__image image">
+                  <img src="public/Инст.svg" alt="" class="instagram" />
+                  <img src="public/Тик ток.svg" alt="" class="tik-tok" />
+                  <img src="public/Вконтакте.svg" alt="" class="vkontakte" />
+                </div>
+              </div>
+              <div class="location__address__contacts contacts">
+                <p>+7 (910) 684-90-53</p>
+                <div class="location__address__contacts__image image">
+                  <img
+                    src="public/Телеграм.svg"
+                    alt="Telegram"
+                    class="telegram"
+                  />
+                  <img
+                    src="public/Ватсап.svg"
+                    alt="WhatsApp"
+                    class="whatsapp"
+                  />
+                  <img src="public/Вайбер.svg" alt="Viber" class="viber" />
+                </div>
               </div>
               <img
-                src="public/МЕТКА.svg"
-                alt="Метка"
-                class="location__address__point"
+                src="public/Кнопка онлайн-запись.png"
+                alt=""
+                class="location__address__online-image online-image"
               />
-              <img
-                src="public/address.png"
-                alt="address-image"
-                class="location__address__background background"
-              />
-              <!-- Переделать на псевдо и bg-img-->
-              <div class="location__address">
-                <div class="location__address__social social">
-                  <p>Социальные сети:</p>
-                  <div class="location__address__social__image image">
-                    <img src="public/Инст.svg" alt="" class="instagram" />
-                    <img src="public/Тик ток.svg" alt="" class="tik-tok" />
-                    <img src="public/Вконтакте.svg" alt="" class="vkontakte" />
-                  </div>
-                </div>
-                <div class="location__address__contacts contacts">
-                  <p>+7 (910) 684-90-53</p>
-                  <div class="location__address__contacts__image image">
-                    <img
-                      src="public/Телеграм.svg"
-                      alt="Telegram"
-                      class="telegram"
-                    />
-                    <img
-                      src="public/Ватсап.svg"
-                      alt="WhatsApp"
-                      class="whatsapp"
-                    />
-                    <img src="public/Вайбер.svg" alt="Viber" class="viber" />
-                  </div>
-                </div>
+              <div class="location__address__tag tag">
                 <img
-                  src="public/Кнопка онлайн-запись.png"
+                  src="public/Location.png"
                   alt=""
-                  class="location__address__online-image online-image"
+                  class="location__address__tag__image image"
                 />
-                <div class="location__address__tag tag">
-                  <img
-                    src="public/Location.png"
-                    alt=""
-                    class="location__address__tag__image image"
-                  />
-                  <p>ул. Черкизова 14, Москва</p>
-                </div>
+                <p>ул. Черкизова 14, Москва</p>
+              </div>
 
-                <div class="location__address__bus">
-                  <p>Как добраться?</p>
-                  <p>Маршруты: 139, 28б</p>
-                </div>
+              <div class="location__address__bus">
+                <p>Как добраться?</p>
+                <p>Маршруты: 139, 28б</p>
               </div>
             </div>
           </div>
