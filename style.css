@@ -757,7 +757,7 @@ header {
 .location__text {
   position: absolute;
   left: 20rem;
-  top: 0;
+  top: -5rem;
   display: grid;
   grid-template-columns: 27rem 40rem;
   grid-template-rows: 10rem 6rem;
@@ -794,6 +794,30 @@ header {
   position: absolute;
   left: 38%;
   top: 48%;
+}
+
+.location__address__contacts .phone-number,
+.location__address__social .text {
+  margin-bottom: 1rem;
+}
+
+.location__address__tag__image {
+}
+
+.location__address__tag {
+  display: grid;
+  grid-template-columns: 3rem 15rem;
+  gap: 1rem;
+}
+
+.location__address__tag .street {
+  width: 90%;
+}
+
+.location__address__bus p:nth-child(1) {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 /*Footer*/
