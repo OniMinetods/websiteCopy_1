@@ -529,10 +529,10 @@ header {
   margin-bottom: 3rem;
 }
 
-.easy-start__border__text p:nth-child(1)::before,
-.flow-rider__border__text p:nth-child(1)::before,
-.easy-start__border__text p:nth-child(1)::after,
-.flow-rider__border__text p:nth-child(1)::after {
+:is(.easy-start__border__text, .flow-rider__border__text)
+  p:nth-child(1)::before,
+:is(.easy-start__border__text, .flow-rider__border__text)
+  p:nth-child(1)::after {
   content: '-';
 }
 
@@ -725,14 +725,12 @@ header {
   color: var(--red);
 }
 
+.order__form__block__table,
 .order__form__text {
+  text-align: center;
   border-radius: 6rem;
   padding: 0.5rem 1.5rem;
-}
-
-.order__form__block__table {
-  border-radius: 6rem;
-  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
 }
 
 .order__form__block__table__tarif {
@@ -868,8 +866,11 @@ header {
   gap: 1rem;
 }
 
-.footer__common__contacts p:nth-child(1),
-.footer__common__client p:nth-child(1) {
+:is(.footer__common__contacts, .footer__common__client) a:hover {
+  color: var(--red);
+}
+
+:is(.footer__common__contacts, .footer__common__client) p:nth-child(1) {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2rem;
