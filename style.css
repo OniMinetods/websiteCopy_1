@@ -233,7 +233,7 @@ header {
 }
 
 .preview__slogan {
-  font-size: 12rem;
+  font-size: clamp(4rem, 7vw, 12rem);
   font-weight: 700;
   line-height: 12rem;
   margin-bottom: 3rem;
@@ -272,12 +272,12 @@ header {
 }
 
 .description__item__head-text {
-  font-size: 2.6rem;
+  font-size: clamp(1.4rem, 1.6vw, 2.6rem);
   font-weight: 700;
   margin: 1rem 0;
 }
 .description__item__main-text {
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 1.3vw, 1.6rem);
   font-weight: 400;
 }
 
@@ -808,6 +808,11 @@ header {
   padding: 3rem 5rem;
 }
 
+.location__address__route {
+  display: flex;
+  gap: 5rem;
+}
+
 .location__point {
   position: absolute;
   left: 38%;
@@ -1216,7 +1221,7 @@ header {
   }
 
   .footer-block {
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 0 2rem;
   }
 
   .footer__common {
