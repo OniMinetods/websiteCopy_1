@@ -808,6 +808,13 @@ header {
   padding: 3rem 5rem;
 }
 
+.location__address__social .text,
+.location__address__contacts .phone-number,
+.location__address__route .street,
+.location__address__route__bus p:nth-child(2) {
+  font-size: clamp(1.2rem, 1.1vw, 2rem);
+}
+
 .location__address__route {
   display: flex;
   gap: 5rem;
@@ -826,12 +833,12 @@ header {
 
 .location__address__route__tag {
   display: grid;
-  grid-template-columns: 3rem 15rem;
+  grid-template-columns: 3rem clamp(8rem, 10vw, 15rem);
   gap: 1rem;
 }
 
 .location__address__route__bus p:nth-child(1) {
-  font-size: 2.6rem;
+  font-size: clamp(1.6rem, 1.5vw, 2.6rem);
   font-weight: 700;
   margin-bottom: 1rem;
 }
