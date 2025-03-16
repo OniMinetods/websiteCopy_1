@@ -133,7 +133,7 @@ header {
 }
 
 .head-text {
-  font-size: 9rem;
+  font-size: clamp(2.2rem, 6vw, 9rem);
   font-weight: 700;
   color: var(--base-blue);
   line-height: 110%;
@@ -141,7 +141,7 @@ header {
 
 .sup-text {
   font-family: 'Panton';
-  font-size: 6.4rem;
+  font-size: clamp(1.6rem, 3.8vw, 6.4rem);
   font-weight: 400;
   color: var(--red);
   line-height: 110%;
@@ -417,6 +417,8 @@ header {
 
 .rewards__text .head {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
 }
@@ -775,8 +777,8 @@ header {
   left: 20rem;
   top: -5rem;
   display: grid;
-  grid-template-columns: 27rem 40rem;
-  grid-template-rows: 10rem 6rem;
+  grid-template-columns: clamp(15rem, 15vw, 27rem) clamp(20rem, 25vw, 40rem);
+  grid-template-rows: clamp(5rem, 5vw, 10rem) clamp(3rem, 4vw, 6rem);
   width: fit-content;
   background: white;
   border-radius: 6rem;
