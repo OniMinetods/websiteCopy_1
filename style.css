@@ -890,6 +890,21 @@ header {
   justify-content: space-between;
 }
 
+.footer__common__contacts p:not(:first-child),
+.footer__common__client p:not(:first-child),
+.footer__common__contacts a,
+.footer__common__client a,
+.footer__common__way p,
+.footer__common__copyright a,
+.footer__common__copyright p {
+  font-size: clamp(1.2rem, 1.1vw, 2rem);
+}
+
+.footer__common__contacts p:first-child,
+.footer__common__client p:first-child {
+  font-size: clamp(1.6rem, 1.5vw, 2.6rem);
+}
+
 /*Media requests*/
 
 @media (max-width: 1900px) {
