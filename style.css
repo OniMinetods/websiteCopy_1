@@ -630,7 +630,6 @@ header {
 .discounts__photos {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -662,12 +661,14 @@ header {
 
 .discounts__photos__card__text-up {
   position: absolute;
+  font-size: clamp(1.2rem, 1.2vw, 2rem);
   top: 0;
   padding: 3rem;
 }
 
 .discounts__photos__card__text-down {
   position: absolute;
+  font-size: clamp(1.2rem, 1.2vw, 2rem);
   bottom: 0;
   padding: 3rem;
 }
