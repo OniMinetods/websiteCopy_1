@@ -219,7 +219,8 @@ header {
 
 .preview {
   text-align: left;
-  padding: 16rem 20rem 12rem 20rem;
+  padding: clamp(5rem, 11vw, 16rem) clamp(5rem, 11vw, 20rem);
+
   color: var(--base-blue);
   margin-bottom: 5rem;
 }
@@ -247,7 +248,7 @@ header {
 /*Description*/
 
 .description-block {
-  padding: 0 18rem;
+  padding: 0 clamp(5rem, 8vw, 20rem);
   margin-bottom: 15rem;
 }
 
@@ -268,7 +269,7 @@ header {
 }
 
 .description__item__image {
-  width: 100%;
+  width: 13vw;
 }
 
 .description__item__head-text {
@@ -970,6 +971,10 @@ header {
   .description {
     padding: 0;
     flex-direction: column;
+  }
+
+  .description__item__image {
+    width: 100%;
   }
 
   .company-block {
