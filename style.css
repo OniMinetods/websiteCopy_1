@@ -322,7 +322,7 @@ header {
   background-image: url('public/Картинка серфера.png');
   border-radius: 3rem;
   width: 100%;
-  height: 35vw;
+  height: 38vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 30%;
@@ -350,13 +350,18 @@ header {
 }
 
 .company__info__block__about p:nth-child(1) {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 2.3vw, 4rem);
   font-weight: 500;
   line-height: 120%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .company__info__block__about p:nth-child(2) {
-  margin-bottom: 2rem;
+  font-size: clamp(1.2rem, 1.1vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.company__info__block__about p:nth-child(3) {
+  font-size: clamp(1.2rem, 1.1vw, 2rem);
 }
 
 .company__info__block__members {
@@ -384,9 +389,13 @@ header {
 }
 
 .company__info__block__members__text p:nth-child(1) {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 2.3vw, 4rem);
   font-weight: 500;
   line-height: 100%;
+}
+
+.company__info__block__members__text p:nth-child(2) {
+  font-size: clamp(1.2rem, 1.1vw, 2rem);
 }
 
 .comment {
