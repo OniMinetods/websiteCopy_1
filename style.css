@@ -682,7 +682,7 @@ header {
 
 /*Order (Form)*/
 .order-block {
-  padding: 10rem 20rem;
+  padding: clamp(5rem, 8vw, 10rem) clamp(5rem, 8vw, 20rem);
   background-image: url('public/background-white-surfing.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -699,13 +699,14 @@ header {
 
 .order__form {
   display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 .order__form__photo {
   max-width: 100%;
-  width: clamp(400px, 35vw, 550px);
-  height: clamp(300px, 25vw, 400px);
-  margin-left: clamp(40px, 4vw, 100px);
+  width: clamp(30rem, 30vw, 55rem);
+  height: clamp(20rem, 25vw, 40rem);
   object-fit: cover;
   object-position: right;
   border-radius: 60px;
@@ -713,7 +714,7 @@ header {
 
 .order__form__block {
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  grid-template-columns: clamp(5rem, 21vw, 50rem) clamp(5rem, 21vw, 50rem);
   gap: 30px;
 }
 
@@ -733,7 +734,7 @@ header {
   text-align: center;
   border-radius: 6rem;
   padding: 0.5rem 1.5rem;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 1.3vw, 2rem);
 }
 
 .order__form__block__table__tarif {
@@ -747,9 +748,13 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 6rem;
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 1vw, 2.4rem);
   font-weight: 400;
   padding: 0.5rem 1.5rem;
+}
+
+.order__form__block p {
+  font-size: clamp(1.2rem, 1vw, 2rem);
 }
 
 /*Location*/
