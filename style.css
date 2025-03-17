@@ -235,13 +235,13 @@ header {
 .preview__slogan {
   font-size: clamp(4rem, 7vw, 12rem);
   font-weight: 700;
-  line-height: 12rem;
+  line-height: clamp(6rem, 7vw, 12rem);
   margin-bottom: 3rem;
   width: 70vw;
 }
 
 .preview__desc {
-  width: 30%;
+  width: 50%;
 }
 
 /*Description*/
