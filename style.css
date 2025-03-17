@@ -821,6 +821,10 @@ header {
   font-size: clamp(1.2rem, 1.1vw, 2rem);
 }
 
+.location__address__online-image {
+  width: 10vw;
+}
+
 .location__address__route {
   display: flex;
   gap: 5rem;
