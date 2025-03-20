@@ -946,16 +946,19 @@ header {
   .description-block {
     padding: 8rem 5rem;
   }
+  .description div:nth-child(4) {
+    display: none;
+  }
   .company-block {
     padding: 16rem 8rem;
-    height: 110vw;
+    height: 90rem;
   }
   .company__info {
     display: flex;
     flex-direction: column;
   }
   .company__info__block__members__avatar {
-    width: auto;
+    width: 6rem;
   }
   .company__info__block__about p:nth-child(1) {
     font-size: clamp(2.5rem, 4.1vw, 4rem);
@@ -982,7 +985,7 @@ header {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 900px) {
   header {
     padding: 2rem 2rem;
   }
@@ -997,123 +1000,32 @@ header {
   .sup-text {
     font-size: 2.2rem;
   }
-
-  .background-image {
-    background-size: 200vw;
-    background-position: 75% 7%;
-  }
-
   .preview-block {
-    padding: 10rem 2rem;
-  }
-  .preview__street {
-    font-size: 1.2rem;
-  }
-  .preview__slogan {
-    display: none;
-  }
-  .mobile-slogan {
-    display: block;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 110%;
-  }
-  .preview__desc {
-    font-size: 1.2rem;
-    width: 100%;
+    padding: 16rem clamp(2rem, 11vw, 10rem) 0 clamp(2rem, 11vw, 10rem);
   }
   .description-block,
-  .company-block,
-  .rewards-block,
-  .comment,
-  .programs-block,
-  .discounts-block,
-  .order-block,
-  .location-block {
-    padding: 0 2rem;
+  .order-block {
+    padding: 10rem 2rem;
   }
+
   .description {
     padding: 0;
     flex-direction: column;
   }
 
-  .description__item__image {
-    width: 100%;
-  }
-
-  .company-block {
-    padding: 10rem 2rem;
-    height: 188vw;
-  }
-
-  .company__text {
-    align-items: center;
-    width: 90vw;
-  }
-  .company__info {
+  .description__item {
     display: flex;
     flex-direction: column;
-  }
-
-  .company__info__screen {
-    height: 60vw;
-  }
-
-  .company__info__block__about p:nth-child(1) {
-    font-size: 2.5rem;
-  }
-  .company__info__block__about p:nth-child(2),
-  .company__info__block__about p:nth-child(3) {
-    font-size: 1.2rem;
-  }
-  .company__info__block__members__avatar {
-    width: 15vw;
-  }
-
-  .rewards-block {
-    height: 180vw;
-    padding: 10rem 2rem;
-    background-position: 30% 30%;
-  }
-
-  .rewards__text {
     justify-content: center;
+    align-items: center;
   }
 
-  .rewards__text .head {
-    flex-direction: column;
-    gap: 1rem;
+  .description__item__image {
+    width: 50vw;
   }
 
-  .rewards__photo__image {
-    border-radius: 3rem;
-    width: 83vw;
-  }
-
-  .rewards__photo__background-border {
-    border-radius: 4rem;
-    padding: 2rem;
-  }
-
-  .rewards__photo__background {
-    border-radius: 3rem;
-    flex-direction: column;
-  }
-  .rewards__photo__background__text {
-    padding: 0.7rem;
-  }
-  .rewards__photo__background__text p:nth-child(1),
-  .rewards__photo__background__text p:nth-child(3),
-  .rewards__photo__background__text p:nth-child(4) {
-    font-size: 1.2rem;
-  }
-  .rewards__photo__background__text p:nth-child(2) {
-    font-size: 2.8rem;
-  }
-
-  .programs__text {
-    flex-direction: column;
-    gap: 0;
+  .programs-block {
+    padding: 0 2rem;
   }
 
   .programs__card {
@@ -1126,7 +1038,6 @@ header {
 
   .easy-start,
   .flow-rider {
-    display: block;
     width: 90vw;
   }
 
@@ -1137,9 +1048,10 @@ header {
     border-radius: 3rem;
     width: 80vw;
   }
-  .easy-start__border-image,
-  .flow-rider__border-image {
-    width: 35%;
+
+  .easy-start__choose,
+  .flow-rider__choose {
+    padding: 2rem 10rem;
   }
 
   .easy-start__border__text p:nth-child(1),
@@ -1171,18 +1083,6 @@ header {
     font-weight: 500;
   }
 
-  .easy-start__info,
-  .flow-rider__info {
-    gap: 1rem;
-  }
-
-  .easy-start__info__course__image,
-  .easy-start__info__lesson__image,
-  .flow-rider__info__course__image,
-  .flow-rider__info__lesson__image {
-    width: 4rem;
-  }
-
   .easy-start__description__mark,
   .flow-rider__description__mark {
     font-size: 1.2rem;
@@ -1199,48 +1099,48 @@ header {
     font-size: 2.5rem;
   }
 
-  .easy-start__choose,
-  .flow-rider__choose {
-    padding: 2rem 10rem;
-  }
-
-  .discounts-block {
-    height: 340vw;
-    background-position: 30% 30%;
-    padding: 10rem 0;
-  }
-
-  .discounts {
+  .comment,
+  .footer-block {
     padding: 0 2rem;
   }
 
-  .discounts__text {
-    justify-content: center;
-    margin: 2rem;
+  .discounts-block {
+    padding: 20rem 2rem;
+    height: auto;
   }
 
   .discounts__photos {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
+    flex-wrap: wrap;
   }
 
   .discounts__photos__card-image {
-    width: 80vw;
-    height: 80vw;
+    width: 50vw;
+    height: 50vw;
   }
 
-  .discounts__photos__card__text-up {
-    font-size: 2rem;
+  .rewards-block {
+    padding: 16rem 2rem;
+    height: auto;
   }
-  .discounts__photos__card__text-down {
-    font-size: 2rem;
-    font-weight: 700;
+
+  .rewards__photo__image {
+    border-radius: 3rem;
+    width: 100%;
+  }
+
+  .rewards__photo__background-border {
+    border-radius: 4rem;
+    padding: 2rem;
+  }
+
+  .rewards__photo__background {
+    border-radius: 3rem;
+    flex-direction: column;
   }
 
   .order-block {
-    height: 290vw;
-    padding: 10rem 2rem;
+    height: auto;
+    padding: 16rem 2rem;
     background-position: 30% 30%;
   }
 
@@ -1277,8 +1177,8 @@ header {
   }
 
   .location__text {
-    grid-template-columns: 8rem 14rem;
-    grid-template-rows: 3rem 3rem;
+    grid-template-columns: 12rem clamp(13rem, 15vw, 15rem);
+    grid-template-rows: clamp(1rem, 6vw, 5rem) clamp(1rem, 2vw, 3rem);
     border-radius: 3rem;
     left: auto;
   }
@@ -1379,5 +1279,176 @@ header {
   }
   .footer__common__copyright p:nth-child(1) {
     order: 3;
+  }
+}
+
+@media (max-width: 430px) {
+  .background-image {
+    background-size: 200vw;
+    background-position: 75% 7%;
+  }
+
+  .preview-block {
+    padding: 10rem 2rem;
+  }
+  .preview__street {
+    font-size: 1.2rem;
+  }
+  .preview__slogan {
+    display: none;
+  }
+  .mobile-slogan {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 110%;
+  }
+  .preview__desc {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .description-block,
+  .company-block,
+  .rewards-block,
+  .comment,
+  .programs-block,
+  .discounts-block,
+  .order-block,
+  .location-block {
+    padding: 0 2rem;
+  }
+
+  .order-block {
+    height: auto;
+    padding: 16rem 2rem;
+    background-position: 30% 30%;
+  }
+
+  .description {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .description__item__image {
+    width: 100%;
+  }
+
+  .company-block {
+    padding: 10rem 2rem;
+    height: 188vw;
+  }
+
+  .company__text {
+    align-items: center;
+    width: 90vw;
+  }
+  .company__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .company__info__screen {
+    height: 60vw;
+  }
+
+  .company__info__block__about p:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .company__info__block__about p:nth-child(2),
+  .company__info__block__about p:nth-child(3) {
+    font-size: 1.2rem;
+  }
+  .company__info__block__members__avatar {
+    width: 15vw;
+  }
+
+  .rewards-block {
+    height: 180vw;
+    padding: 10rem 2rem;
+    background-position: 30% 30%;
+  }
+
+  .rewards__text {
+    justify-content: center;
+  }
+
+  .rewards__text .head {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .rewards__photo__background__text {
+    padding: 0.7rem;
+  }
+  .rewards__photo__background__text p:nth-child(1),
+  .rewards__photo__background__text p:nth-child(3),
+  .rewards__photo__background__text p:nth-child(4) {
+    font-size: 1.2rem;
+  }
+  .rewards__photo__background__text p:nth-child(2) {
+    font-size: 2.8rem;
+  }
+
+  .programs__text {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .easy-start__border-image,
+  .flow-rider__border-image {
+    width: 35%;
+  }
+
+  .easy-start__info,
+  .flow-rider__info {
+    gap: 1rem;
+  }
+
+  .easy-start__info__course__image,
+  .easy-start__info__lesson__image,
+  .flow-rider__info__course__image,
+  .flow-rider__info__lesson__image {
+    width: 4rem;
+  }
+
+  .discounts-block {
+    height: 340vw;
+    background-position: 30% 30%;
+    padding: 10rem 0;
+  }
+
+  .discounts {
+    padding: 0 2rem;
+  }
+
+  .discounts__text {
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  .discounts__photos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .discounts__photos__card-image {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .discounts__photos__card__text-up {
+    font-size: 2rem;
+  }
+  .discounts__photos__card__text-down {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .location__text {
+    grid-template-columns: 8rem 14rem;
+    grid-template-rows: 3rem 3rem;
+    border-radius: 3rem;
+    left: auto;
   }
 }
