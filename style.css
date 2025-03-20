@@ -247,7 +247,7 @@ header {
 /*Description*/
 
 .description-block {
-  padding: clamp(4rem, 10.5vw, 16rem) clamp(8rem, 10.5vw, 20rem);
+  padding: clamp(4rem, 10.5vw, 16rem) clamp(10rem, 10.5vw, 20rem);
   margin-bottom: 15rem;
 }
 
@@ -461,14 +461,14 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--light-blue);
-  border-radius: 6rem;
+  border-radius: 3rem;
   background: white;
 }
 
 .rewards__photo__background-border {
   padding: 3rem;
   background: var(--light-blue);
-  border-radius: 6rem;
+  border-radius: 4rem;
 }
 
 .rewards__photo__background__text {
@@ -943,6 +943,9 @@ header {
 }
 
 @media (max-width: 1000px) {
+  .description-block {
+    padding: 8rem 5rem;
+  }
   .company-block {
     padding: 16rem 8rem;
     height: 110vw;
