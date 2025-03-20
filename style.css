@@ -124,8 +124,9 @@ header {
   position: absolute;
   box-sizing: border-box;
   width: 100%;
-  padding: 3rem 20rem 0 20rem;
+  padding: 3rem clamp(10rem, 10.5vw, 20rem);
   z-index: 1;
+  margin: 0 auto;
 }
 
 .mobile-slogan {
@@ -205,10 +206,6 @@ header {
 
 /*Main*/
 
-.container {
-  padding: 0;
-}
-
 .background-image {
   background-image: url('public/bg-image-preview.png');
   background-size: 100vw;
@@ -217,10 +214,12 @@ header {
 
 /*Preview*/
 
+.preview-block {
+  padding: 16rem clamp(5rem, 10.5vw, 20rem) 0 clamp(5rem, 10.5vw, 20rem);
+}
+
 .preview {
   text-align: left;
-  padding: clamp(5rem, 11vw, 16rem) clamp(5rem, 11vw, 20rem);
-
   color: var(--base-blue);
   margin-bottom: 5rem;
 }
@@ -248,7 +247,7 @@ header {
 /*Description*/
 
 .description-block {
-  padding: 0 clamp(5rem, 8vw, 20rem);
+  padding: clamp(4rem, 10.5vw, 16rem) clamp(8rem, 10.5vw, 20rem);
   margin-bottom: 15rem;
 }
 
@@ -291,7 +290,7 @@ header {
 
 .company-block {
   color: white;
-  padding: 10rem 20rem;
+  padding: 16rem clamp(8rem, 10vw, 20rem);
   background-image: url('public/background-white-surfing.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -321,8 +320,7 @@ header {
   position: relative;
   background-image: url('public/Картинка серфера.png');
   border-radius: 3rem;
-  width: 100%;
-  height: 38vw;
+  height: 40vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 30%;
@@ -410,7 +408,7 @@ header {
 /*Rewards*/
 
 .rewards-block {
-  padding: 10rem 20rem;
+  padding: 16rem clamp(10rem, 10.5vw, 20rem);
   margin-bottom: 20rem;
   background-image: url('public/background-white-rewards.png');
   background-repeat: no-repeat;
@@ -418,11 +416,16 @@ header {
   height: 45vw;
 }
 
+.rewards {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 .rewards__text {
   color: var(--base-blue);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
 }
 
 .rewards__text .head {
@@ -449,11 +452,12 @@ header {
 
 .rewards__photo__image {
   width: clamp(30rem, 35vw, 60rem);
-  height: auto;
+  height: 100%;
 }
 
 .rewards__photo__background {
   display: flex;
+  gap: 5rem;
   justify-content: space-between;
   align-items: center;
   background: var(--light-blue);
@@ -468,7 +472,6 @@ header {
 }
 
 .rewards__photo__background__text {
-  padding: 5rem;
   color: var(--base-blue);
 }
 
@@ -478,24 +481,30 @@ header {
   margin-bottom: 1rem;
 }
 .rewards__photo__background__text p:nth-child(2) {
-  font-size: 4.5rem;
+  font-size: clamp(1.8rem, 2.5vw, 4.5rem);
   font-weight: 500;
   line-height: 120%;
   margin-bottom: 2rem;
+  width: 70%;
 }
 
 .rewards__photo__background__text p:nth-child(3) {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 1.15vw, 2rem);
   font-weight: 400;
   line-height: 120%;
-  width: 50%;
-  margin-bottom: 5rem;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+.rewards__photo__background__text p:nth-child(4) {
+  font-size: clamp(1.2rem, 1.15vw, 2rem);
 }
 
 /*Programs*/
 
 .programs-block {
-  padding: 0 20rem;
+  padding: 0 clamp(10rem, 10.5vw, 20rem);
+  margin-bottom: 24rem;
 }
 
 .programs__text {
@@ -508,9 +517,8 @@ header {
 
 .programs__card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(42rem, 2fr));
-  gap: 20rem;
-  margin-bottom: 24rem;
+  grid-template-columns: repeat(auto-fit, minmax(60rem, 2fr));
+  gap: 5rem;
 }
 
 .easy-start,
@@ -531,8 +539,8 @@ header {
   background: white;
   border-radius: 6rem;
   padding: 6rem 4rem;
-  margin: 0 1.5rem;
-  width: 40vw;
+  margin-bottom: 20rem;
+  width: 60rem;
 }
 
 .easy-start__border__text,
@@ -623,15 +631,16 @@ header {
 /*Discounts*/
 
 .discounts-block {
-  padding: 15rem 20rem;
+  padding: 10rem 0;
   background-image: url('public/background-white-discounts.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vw;
+  height: 45vw;
   margin-bottom: 10rem;
 }
 
 .discounts {
+  padding: 0 clamp(10rem, 10.5vw, 20rem);
   position: relative;
   overflow: visible;
   color: white;
@@ -652,8 +661,8 @@ header {
 }
 
 .discounts__photos__card-image {
-  width: clamp(20rem, 20vw, 35rem);
-  height: clamp(20rem, 20vw, 35rem);
+  width: clamp(18rem, 20vw, 35rem);
+  height: clamp(18rem, 20vw, 35rem);
   object-fit: cover;
   border-radius: 3.5rem;
   filter: brightness(70%);
@@ -692,7 +701,7 @@ header {
 
 /*Order (Form)*/
 .order-block {
-  padding: clamp(5rem, 8vw, 10rem) clamp(5rem, 8vw, 20rem);
+  padding: 16rem clamp(10rem, 10.5vw, 20rem);
   background-image: url('public/background-white-surfing.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -715,11 +724,11 @@ header {
 
 .order__form__photo {
   max-width: 100%;
-  width: clamp(30rem, 30vw, 55rem);
-  height: clamp(20rem, 25vw, 40rem);
+  width: clamp(23rem, 28vw, 55rem);
+  height: clamp(13rem, 23vw, 40rem);
   object-fit: cover;
   object-position: right;
-  border-radius: 60px;
+  border-radius: 4rem;
 }
 
 .order__form__block {
@@ -867,7 +876,7 @@ header {
 
 .footer-block {
   background: white;
-  padding: 10rem 15rem 0 15rem;
+  padding: 16rem clamp(10rem, 10.5vw, 20rem) 0 clamp(10rem, 10.5vw, 20rem);
 }
 
 .footer__common {
@@ -933,6 +942,43 @@ header {
   }
 }
 
+@media (max-width: 1000px) {
+  .company-block {
+    padding: 16rem 8rem;
+    height: 110vw;
+  }
+  .company__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .company__info__block__members__avatar {
+    width: auto;
+  }
+  .company__info__block__about p:nth-child(1) {
+    font-size: clamp(2.5rem, 4.1vw, 4rem);
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 1rem;
+  }
+  .company__info__block__about p:nth-child(2) {
+    font-size: clamp(1.2rem, 2.1vw, 2rem);
+    margin-bottom: 1rem;
+  }
+
+  .company__info__block__about p:nth-child(3) {
+    font-size: clamp(1.2rem, 2.1vw, 2rem);
+  }
+  .company__info__block__members__text p:nth-child(1) {
+    font-size: clamp(2.5rem, 4.1vw, 4rem);
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  .company__info__block__members__text p:nth-child(2) {
+    font-size: clamp(1.2rem, 2.1vw, 2rem);
+  }
+}
+
 @media (max-width: 430px) {
   header {
     padding: 2rem 2rem;
@@ -948,7 +994,13 @@ header {
   .sup-text {
     font-size: 2.2rem;
   }
-  .preview {
+
+  .background-image {
+    background-size: 200vw;
+    background-position: 75% 7%;
+  }
+
+  .preview-block {
     padding: 10rem 2rem;
   }
   .preview__street {
@@ -998,6 +1050,10 @@ header {
   .company__info {
     display: flex;
     flex-direction: column;
+  }
+
+  .company__info__screen {
+    height: 60vw;
   }
 
   .company__info__block__about p:nth-child(1) {
@@ -1057,8 +1113,12 @@ header {
     gap: 0;
   }
 
-  .programs-block {
-    padding: 0 1rem;
+  .programs__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
   }
 
   .easy-start,
@@ -1142,14 +1202,24 @@ header {
   }
 
   .discounts-block {
-    height: 320vw;
+    height: 340vw;
     background-position: 30% 30%;
     padding: 10rem 0;
+  }
+
+  .discounts {
+    padding: 0 2rem;
   }
 
   .discounts__text {
     justify-content: center;
     margin: 2rem;
+  }
+
+  .discounts__photos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
   }
 
   .discounts__photos__card-image {
@@ -1166,7 +1236,7 @@ header {
   }
 
   .order-block {
-    height: 310vw;
+    height: 290vw;
     padding: 10rem 2rem;
     background-position: 30% 30%;
   }
@@ -1184,6 +1254,7 @@ header {
   }
   .order__form__photo {
     width: 90vw;
+    height: 60vw;
     margin: 0;
     border-radius: 3rem;
   }
@@ -1199,7 +1270,7 @@ header {
   }
 
   .location-block {
-    width: 88vw;
+    width: auto;
   }
 
   .location__text {
