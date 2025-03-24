@@ -149,13 +149,19 @@ header {
 }
 
 /*Header*/
+label {
+  display: none;
+}
+
+#burger-toggle {
+  display: none;
+}
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
-  text-align: center;
 }
 
 .header-container__menu.menu {
@@ -936,9 +942,77 @@ header {
 
 /*Media requests*/
 
-@media (max-width: 1900px) {
-  .header-container__menu {
-    display: none;
+@media (max-width: 1800px) {
+  .header-container__menu.menu {
+    background-color: var(--light-blue);
+    order: 4;
+    padding: 2.5rem;
+    border-radius: 2rem;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  label::before,
+  label::after,
+  label span {
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--base-blue);
+    transition: 0.3s;
+  }
+
+  label span {
+    top: 1rem;
+  }
+
+  label::before {
+    content: '';
+    top: 0;
+  }
+
+  label::after {
+    content: '';
+    bottom: 0;
+  }
+
+  #burger-toggle:checked ~ label::after {
+    transform: rotate(45deg);
+    bottom: 1rem;
+  }
+
+  #burger-toggle:checked ~ label::before {
+    transform: rotate(-45deg);
+    top: 1.2rem;
+  }
+
+  #burger-toggle:checked ~ label span {
+    transform: rotate(-45deg);
+    top: 1.2rem;
+  }
+  .header-container__menu .menu-list {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    top: -100vh;
+    bottom: 100vh;
+    transition: 0.4s;
+  }
+
+  #burger-toggle:checked ~ ul {
+    top: 0;
+    bottom: 30vh;
+    gap: 3rem;
+    padding-top: 12rem;
   }
 }
 
@@ -989,6 +1063,7 @@ header {
   header {
     padding: 2rem 2rem;
   }
+
   .header-container__contacts .contacts-number,
   .rewards__text__year,
   .header-container__details.details {
